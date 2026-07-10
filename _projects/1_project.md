@@ -1,14 +1,21 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Microgravity Blood Infusion Project
+description: NASA Human Lander Challenge 2026 Finalist
+img: assets/img/mbip.jpg
 importance: 1
 category: work
 related_publications: true
 ---
+Developed as part of Purdue University's NASA Human Lander Challenge 2026 finalist team, the Microgravity Blood Infusion Project (MBIP) is a blood transfusion system designed to operate in the absence of gravity.
 
+On Earth, transfusions rely on gravity to drive fluid flow. In microgravity, this assumption breaks down entirely. Our system addresses this through a peristaltic pump, ePTFE bubble trap, and ultrasonic sensors to safely deliver rehydrated freeze-dried blood product at controlled flow rates of 100-250 mL/hr with ±5% accuracy.
+
+I was responsible for the peristaltic pump trade study, pump assembly design in Fusion 360, and Arduino-based brushless DC motor control software.
+
+The system was presented to NASA engineers and industry professionals at Marshall Space Flight Center in Huntsville, Alabama.
 Every project has a beautiful feature showcase page.
+
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
 
