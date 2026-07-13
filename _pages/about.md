@@ -2,19 +2,20 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mechanical Engineering Student at Purdue University
+subtitle: Mechanical Engineering Student · Purdue University · NASA HuLC Finalist · IEEE Published Author
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>nmukesh@purdue.edu</p>
-    <p>Purdue University</p>
-    <p>West Lafayette, IN</p>
+  image_circular: true
+  more_info:
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
+announcements:
+  enabled: false
+latest_posts:
+  enabled: false
 
 announcements:
   enabled: false # includes a list of news items
