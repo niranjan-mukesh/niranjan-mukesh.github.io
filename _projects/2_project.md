@@ -8,6 +8,7 @@ img: assets/img/exoskeleton.jpg
 importance: 2
 category: work
 giscus_comments: true
+related_publications: true
 ---
 The Robotic Wheelchair Exoskeleton project aims to improve mobility and independence for wheelchair users through an integrated exoskeleton drive system. I first contributed to this project as a high school intern, collaborating with a senior design team on early development.
 
