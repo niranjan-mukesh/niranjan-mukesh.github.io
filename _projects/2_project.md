@@ -1,13 +1,19 @@
 ---
+Here's what to put in 2_project.md:
+---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Robotic Wheelchair Exoskeleton
+description: Motor design and control system development
+img: assets/img/exoskeleton.jpg
 importance: 2
 category: work
 giscus_comments: true
 ---
+The Robotic Wheelchair Exoskeleton project aims to improve mobility and independence for wheelchair users through an integrated exoskeleton drive system. I first contributed to this project as a high school intern, collaborating with a senior design team on early development.
 
+I have since continued my involvement at Purdue University, working closely with Dr. Chris on two primary areas of development. On the mechanical side, I am designing motor mounts in Fusion 360 to integrate CubeMars AK10-9 actuators into the exoskeleton frame. On the software side, I am developing motor control software using a Raspberry Pi and CAN HAT to drive and coordinate the actuators.
+
+This project sits at the intersection of mechanical design and embedded systems, with the goal of building reliable, effective rehabilitation technology for real users.
 Every project has a beautiful feature showcase page.
 It's easy to include images in a flexible 3-column grid format.
 Make your photos 1/3, 2/3, or full width.
