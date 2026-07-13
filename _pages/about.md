@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Mechanical Engineering Student · Purdue University · NASA HuLC Finalist · IEEE Published Author
+subtitle:
 
 profile:
   align: right
@@ -10,8 +10,8 @@ profile:
   image_circular: true
   more_info:
 
-selected_papers: true
-social: true
+selected_papers: false
+social: false
 announcements:
   enabled: false
 latest_posts:
@@ -28,9 +28,27 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a Mechanical Engineering student at Purdue University with a focus on medical devices and rehabilitation technology.
+<div style="padding: 60px 0 40px 0;">
+  <h1 style="font-size: 3rem; font-weight: 700; margin-bottom: 10px;">Hi, I'm Niranjan.</h1>
+  <p style="font-size: 1.3rem; color: #555;">I build technology that improves human health and mobility.</p>
+</div>
 
-My experience includes developing a microgravity blood transfusion system as part of a NASA Human Lander Challenge finalist team, contributing to the design and control systems of a robotic wheelchair exoskeleton, and publishing research with IEEE. These projects have given me hands-on experience in mechanical design, embedded systems, and biomedical engineering.
+<hr>
 
-I am actively seeking research opportunities and internships where I can apply my technical background to meaningful problems in the medical device and rehabilitation space.
+<div style="padding: 40px 0;">
+  <h2 style="font-weight: 600; margin-bottom: 20px;">About Me</h2>
+  <p>I am a Mechanical Engineering student at Purdue University with a focus on medical devices and rehabilitation technology.</p>
+  <p>My experience includes developing a microgravity blood transfusion system as part of a NASA Human Lander Challenge finalist team, contributing to the design and control systems of a robotic wheelchair exoskeleton, and publishing research with IEEE. These projects have given me hands-on experience in mechanical design, embedded systems, and biomedical engineering.</p>
+  <p>I am actively seeking research opportunities and internships where I can apply my technical background to meaningful problems in the medical device and rehabilitation space.</p>
+</div>
 
+<hr>
+
+<div style="padding: 40px 0;">
+  <h2 style="font-weight: 600; margin-bottom: 20px;">My Work</h2>
+  <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+    <a href="/projects/" style="padding: 14px 28px; background: #000; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500;">Projects</a>
+    <a href="/publications/" style="padding: 14px 28px; background: #000; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500;">Publications</a>
+    <a href="mailto:niranjanmukesh07@gmail.com" style="padding: 14px 28px; background: #000; color: #fff; border-radius: 8px; text-decoration: none; font-weight: 500;">Contact</a>
+  </div>
+</div>
