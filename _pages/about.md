@@ -2,13 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle:
+subtitle: Mechanical engineering, Purdue University — medical devices and rehabilitation technology
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true
-  more_info:
+  image_circular: false
+  more_info: >
+    <p class="proof-line">NASA HuLC finalist &middot; IEEE published author</p>
+---
 
 selected_papers: false
 social: false
