@@ -9,15 +9,11 @@ profile:
   image: prof_pic.jpg
   image_circular: false
   more_info: >
-    <p class="proof-line">NASA HuLC finalist &middot; IEEE published author</p>
----
+    <p>NASA HuLC finalist &middot; IEEE published author</p>
 
+news: false
 selected_papers: false
-social: false
-announcements:
-  enabled: false
-latest_posts:
-  enabled: false
+social: true
 
 announcements:
   enabled: false # includes a list of news items
