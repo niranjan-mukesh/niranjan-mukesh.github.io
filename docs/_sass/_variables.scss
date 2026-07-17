@@ -1,0 +1,20 @@
+// Purdue-inspired dark theme override
+$gold: #C4A96A;
+$gold-light: #D4BC8A;
+$near-black: #1A1610;
+$surface-dark: #2C2620;
+$text-light: #F5F0E6;
+$text-muted: #B8B0A0;
+
+:root {
+  --global-theme-color: #{$gold};
+  --global-bg-color: #{$near-black};
+  --global-card-bg-color: #{$surface-dark};
+  --global-text-color: #{$text-light};
+  --global-text-color-light: #{$text-muted};
+  --global-hover-color: #{$gold-light};
+  --global-hover-text-color: #{$near-black};
+  --global-footer-bg-color: #{$near-black};
+  --global-footer-text-color: #{$text-muted};
+  --global-divider-color: rgba(196, 169, 106, 0.25);
+}
