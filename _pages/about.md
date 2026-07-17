@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 subtitle: Mechanical engineering, Purdue University — medical devices and rehabilitation technology
-profile:
+profile: 
   align: right
   image: prof_pic.jpg
   image_circular: false
