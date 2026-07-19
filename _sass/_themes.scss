@@ -18,3 +18,43 @@
   --global-newsletter-bg-color: #2C2620;
   --global-newsletter-text-color: #F5F0E6;
 }
+.hero-glow {
+  padding: 12px 0;
+  background: radial-gradient(circle at top right, rgba(196, 169, 106, 0.15) 0%, transparent 60%);
+}
+
+.section-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--global-theme-color);
+  font-weight: 700;
+  display: inline-block;
+  border-bottom: 2px solid var(--global-theme-color);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 24px;
+}
+
+.btn-gold {
+  background: var(--global-theme-color);
+  color: var(--global-bg-color);
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.btn-gold:hover {
+  opacity: 0.85;
+  color: var(--global-bg-color);
+}
