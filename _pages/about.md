@@ -20,12 +20,10 @@ latest_posts:
   limit: 3
 ---
 
-<div class="hero-glow">
-
+<div class="hero-glow" markdown="1">
 # I'm Niranjan Mukesh, a Mechanical Engineer.
 
 Building technology for human health and mobility.
-
 </div>
 
 <hr>
@@ -37,8 +35,8 @@ I'm a rising sophomore at Purdue University studying Mechanical Engineering, wit
 My work includes a microgravity blood infusion system as a NASA HuLC finalist, control systems for a robotic wheelchair exoskeleton, and published IEEE research on rehabilitation robotics.
 
 <div class="button-row">
-  <a href="/cv/" class="btn-gold">CV</a>
-  <a href="/projects/" class="btn-gold">Projects</a>
-  <a href="/publications/" class="btn-gold">Publications</a>
-  <a href="mailto:niranjanmukesh07@gmail.com" class="btn-gold">Contact</a>
+<a href="/cv/" class="btn-gold">CV</a>
+<a href="/projects/" class="btn-gold">Projects</a>
+<a href="/publications/" class="btn-gold">Publications</a>
+<a href="mailto:niranjanmukesh07@gmail.com" class="btn-gold">Contact</a>
 </div>
