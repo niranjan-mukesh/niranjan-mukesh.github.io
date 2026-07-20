@@ -1,8 +1,7 @@
 ---
 layout: about
 title: about
-permalink: /
-subtitle: Mechanical engineering, Purdue University — medical devices and rehabilitation technology
+permalink: 
 hero_title: I'm Niranjan Mukesh, a Mechanical Engineer.
 hero_subtitle: Building technology for human health and mobility.
 profile:
