@@ -17,16 +17,37 @@
   --global-back-to-top-text-color: #FFFFFF;
   --global-newsletter-bg-color: #FFFFFF;
   --global-newsletter-text-color: #1F1F1D;
-} 
+}
+
+/* ---- Hero layout: photo + gradient text box as two columns ---- */
+.post-header {
+  display: flex;
+  align-items: center;
+  gap: 56px;
+  flex-wrap: wrap;
+}
+
 .profile.float-right {
-  margin: 0 0 24px 40px;
+  float: none;       /* cancel default float so flexbox controls position */
+  margin: 0;
+  flex: 0 0 300px;    /* fixed-ish column width, like the inspiration photo */
+}
+
+.profile.float-right img,
+.profile.float-right picture {
+  border-radius: 16px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .hero-glow {
+  flex: 1;
+  min-width: 280px;
   padding: 40px 48px;
   border-radius: 12px;
   background: linear-gradient(135deg, #FFFFFF 0%, #FBF3DD 100%);
-  overflow: hidden; /* keeps the box from wrapping awkwardly around the float */
+  overflow: hidden; /* prevents background from wrapping oddly */
 }
 
 .hero-glow h1 {
@@ -35,6 +56,15 @@
   line-height: 1.2;
   margin-bottom: 12px;
 }
+
+.hero-glow p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: var(--global-text-color-light);
+  margin-bottom: 0;
+}
+
+/* ---- Section label ---- */
 .section-label {
   font-size: 11px;
   text-transform: uppercase;
@@ -47,6 +77,7 @@
   margin-bottom: 12px;
 }
 
+/* ---- Buttons ---- */
 .button-row {
   display: flex;
   gap: 12px;
