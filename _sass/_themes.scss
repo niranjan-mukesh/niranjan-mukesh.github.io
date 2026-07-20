@@ -22,7 +22,7 @@
 /* ---- Hero row: photo + gradient box as two real columns ---- */
 .hero-row {
   display: flex;
-  align-items: center;
+  align-items: stretch;   /* was: center */
   gap: 56px;
   flex-wrap: wrap;
   margin-bottom: 24px;
@@ -51,8 +51,10 @@
   padding: 40px 48px;
   border-radius: 12px;
   background: linear-gradient(135deg, #FFFFFF 0%, #FBF3DD 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-
 .hero-glow h1 {
   font-weight: 800;
   font-size: 2rem;
