@@ -19,22 +19,26 @@
   --global-newsletter-text-color: #1F1F1D;
 }
 
-/* ---- Hero layout: photo + gradient text box as two columns ---- */
-.post-header {
+/* ---- Hero row: photo + gradient box as two real columns ---- */
+.hero-row {
   display: flex;
   align-items: center;
   gap: 56px;
   flex-wrap: wrap;
+  margin-bottom: 24px;
 }
 
-.profile.float-right {
-  float: none;       /* cancel default float so flexbox controls position */
+.profile.float-right,
+.profile.float-left {
+  float: none;
   margin: 0;
-  flex: 0 0 300px;    /* fixed-ish column width, like the inspiration photo */
+  flex: 0 0 300px;
 }
 
 .profile.float-right img,
-.profile.float-right picture {
+.profile.float-left img,
+.profile.float-right picture,
+.profile.float-left picture {
   border-radius: 16px;
   width: 100%;
   height: auto;
@@ -47,7 +51,6 @@
   padding: 40px 48px;
   border-radius: 12px;
   background: linear-gradient(135deg, #FFFFFF 0%, #FBF3DD 100%);
-  overflow: hidden; /* prevents background from wrapping oddly */
 }
 
 .hero-glow h1 {
