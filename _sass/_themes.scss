@@ -8,7 +8,7 @@
   --global-hover-text-color: #FFFFFF;
   --global-footer-bg-color: #1A1610;
   --global-footer-text-color: #B8B0A0;
-  --global-footer-link-color: #C9A227; 
+  --global-footer-link-color: #C9A227;
   --global-distill-app-color: #6B6A64;
   --global-divider-color: rgba(0, 0, 0, 0.1);
   --global-card-bg-color: #FFFFFF;
@@ -19,20 +19,27 @@
   --global-newsletter-text-color: #1F1F1D;
 }
 
-/* ---- Hero row: photo + gradient box as two real columns ---- */
+.hero-card {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F5E2B0 100%);
+  border: 2px solid var(--global-theme-color);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 56px;
+}
+
 .hero-row {
   display: flex;
-  align-items: stretch;   /* was: center */
-  gap: 56px;
+  align-items: stretch;
+  gap: 64px;
   flex-wrap: wrap;
-  margin-bottom: 24px;
+  flex-direction: row-reverse;
 }
 
 .profile.float-right,
 .profile.float-left {
   float: none;
   margin: 0;
-  flex: 0 0 300px;
+  flex: 0 0 340px;
 }
 
 .profile.float-right img,
@@ -48,61 +55,64 @@
 .hero-glow {
   flex: 1;
   min-width: 280px;
-  padding: 40px 48px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, #FFFFFF 0%, #FBF3DD 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .hero-glow h1 {
   font-weight: 800;
-  font-size: 2rem;
-  line-height: 1.2;
-  margin-bottom: 12px;
+  font-size: 2.5rem;
+  line-height: 1.15;
+  margin-bottom: 16px;
 }
 
 .hero-glow p {
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.6;
   color: var(--global-text-color-light);
   margin-bottom: 0;
 }
 
-/* ---- Section label ---- */
 .section-label {
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--global-theme-color);
   font-weight: 700;
   display: inline-block;
-  border-bottom: 2px solid var(--global-theme-color);
+  border-bottom: 3px solid var(--global-theme-color);
   padding-bottom: 4px;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
-/* ---- Buttons ---- */
+.clearfix > p {
+  font-size: 1.2rem;
+  line-height: 1.75;
+  margin-bottom: 24px;
+}
+
 .button-row {
   display: flex;
-  gap: 12px;
+  justify-content: center;
+  gap: 16px;
   flex-wrap: wrap;
-  margin-top: 24px;
+  margin-top: 32px;
 }
 
 .btn-gold {
   background: var(--global-theme-color);
-  color: var(--global-bg-color);
+  color: #3A2D06;
   border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
+  border-radius: 10px;
+  padding: 14px 28px;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 15px;
   text-decoration: none;
   display: inline-block;
 }
 
 .btn-gold:hover {
   opacity: 0.85;
-  color: var(--global-bg-color);
+  color: #3A2D06;
 }
