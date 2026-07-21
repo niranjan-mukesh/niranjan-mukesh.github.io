@@ -20,11 +20,6 @@
 }
 
 /* ---- Hero card: full-bleed, flush to navbar and to the About Me divider ---- */
-body:has(.hero-card) .container.mt-5 {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
 .hero-card {
   background: linear-gradient(135deg, #FFFFFF 0%, #F5E2B0 100%);
   border: none;
@@ -33,7 +28,7 @@ body:has(.hero-card) .container.mt-5 {
   width: 100vw;
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
-  margin-top: 0 !important;
+  margin-top: -57px !important;
   margin-bottom: 0 !important;
 }
 
@@ -94,6 +89,7 @@ body:has(.hero-card) .container.mt-5 {
   margin-bottom: 0;
 }
 
+/* ---- Section label ---- */
 .section-label {
   font-size: 14px;
   text-transform: uppercase;
@@ -103,19 +99,16 @@ body:has(.hero-card) .container.mt-5 {
   display: inline-block;
   border-bottom: 3px solid var(--global-theme-color);
   padding-bottom: 6px;
+  margin-top: 40px;
   margin-bottom: 28px;
 }
 
 .clearfix > p {
   font-size: 1.4rem;
   line-height: 1.85;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 32px;
 }
-
-
-
-
 
 /* ---- Info cards (Projects / Publications / CV) ---- */
 .card-row {
