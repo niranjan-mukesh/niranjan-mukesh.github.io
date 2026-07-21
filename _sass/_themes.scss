@@ -19,12 +19,25 @@
   --global-newsletter-text-color: #1F1F1D;
 }
 
+/* ---- Hero card: full-bleed, flush to navbar ---- */
+body:has(.hero-card) .container.mt-5 {
+  padding-top: 0;
+}
+
 .hero-card {
   background: linear-gradient(135deg, #FFFFFF 0%, #F5E2B0 100%);
-  border: 2px solid var(--global-theme-color);
-  border-radius: 20px;
-  padding: 40px;
+  border: none;
+  border-radius: 0;
+  padding: 40px 60px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-right: calc(-50vw + 50%);
+  margin-top: 0;
   margin-bottom: 56px;
+}
+
+.clearfix > hr:first-child {
+  margin-top: 0;
 }
 
 .hero-row {
@@ -74,6 +87,7 @@
   margin-bottom: 0;
 }
 
+/* ---- Section label ---- */
 .section-label {
   font-size: 12px;
   text-transform: uppercase;
@@ -92,6 +106,53 @@
   margin-bottom: 24px;
 }
 
+/* ---- Info cards (Projects / Publications / CV) ---- */
+.card-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 40px 0 32px;
+}
+
+.info-card {
+  flex: 1;
+  min-width: 220px;
+  background: #FAFAF8;
+  border-radius: 12px;
+  padding: 28px 24px;
+  text-align: center;
+}
+
+.info-card h3 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.info-card p {
+  font-size: 13px;
+  color: var(--global-text-color-light);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+/* ---- Outline buttons (used everywhere: cards + contact) ---- */
+.btn-outline {
+  display: inline-block;
+  background: rgba(201, 162, 39, 0.12);
+  color: #1F1F1D;
+  border: 1.5px solid #1F1F1D;
+  border-radius: 8px;
+  padding: 9px 18px;
+  font-weight: 600;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.btn-outline:hover {
+  background: rgba(201, 162, 39, 0.22);
+  color: #1F1F1D;
+}
+
 .button-row {
   display: flex;
   justify-content: center;
@@ -100,22 +161,7 @@
   margin-top: 32px;
 }
 
-.btn-gold {
-  background: var(--global-theme-color);
-  color: #3A2D06;
-  border: none;
-  border-radius: 10px;
-  padding: 14px 28px;
-  font-weight: 600;
-  font-size: 15px;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.btn-gold:hover {
-  opacity: 0.85;
-  color: #3A2D06;
-}
+/* ---- Navbar title fix ---- */
 #navbar .container:not(:has(.navbar-brand)) {
   display: flex;
   align-items: center;
@@ -128,23 +174,4 @@
   color: var(--global-text-color);
   margin-right: auto;
   white-space: nowrap;
-}
-body:has(.hero-card) .container.mt-5 {
-  padding-top: 0;
-}
-
-.hero-card {
-  background: linear-gradient(135deg, #FFFFFF 0%, #F5E2B0 100%);
-  border: none;
-  border-radius: 0;
-  padding: 40px 60px;
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.clearfix > hr:first-child {
-  margin-top: 0;
 }
