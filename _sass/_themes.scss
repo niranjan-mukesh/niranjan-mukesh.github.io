@@ -19,9 +19,9 @@
   --global-newsletter-text-color: #1F1F1D;
 }
 
-/* ---- Hero card: full-bleed, flush to navbar ---- */
+/* ---- Hero card: full-bleed, flush to navbar and to the About Me divider ---- */
 body:has(.hero-card) .container.mt-5 {
-  padding-top: 0;
+  margin-top: 0;
 }
 
 .hero-card {
@@ -33,11 +33,12 @@ body:has(.hero-card) .container.mt-5 {
   margin-left: calc(-50vw + 50%);
   margin-right: calc(-50vw + 50%);
   margin-top: 0;
-  margin-bottom: 56px;
+  margin-bottom: 0;
 }
 
 .clearfix > hr:first-child {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .hero-row {
@@ -135,7 +136,7 @@ body:has(.hero-card) .container.mt-5 {
   margin-bottom: 16px;
 }
 
-/* ---- Outline buttons (used everywhere: cards + contact) ---- */
+/* ---- Outline buttons (cards + contact) ---- */
 .btn-outline {
   display: inline-block;
   background: rgba(201, 162, 39, 0.12);
@@ -175,3 +176,7 @@ body:has(.hero-card) .container.mt-5 {
   margin-right: auto;
   white-space: nowrap;
 }
+
+
+
+
