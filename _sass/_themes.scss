@@ -116,3 +116,16 @@
   opacity: 0.85;
   color: #3A2D06;
 }
+#navbar .container:not(:has(.navbar-brand)) {
+  display: flex;
+  align-items: center;
+}
+
+#navbar .container:not(:has(.navbar-brand))::before {
+  content: "Niranjan Mukesh";
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--global-text-color);
+  margin-right: auto;
+  white-space: nowrap;
+}
