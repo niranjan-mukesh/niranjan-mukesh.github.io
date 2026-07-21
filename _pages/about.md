@@ -1,7 +1,7 @@
 ---
-layout: Home
+layout: about
 title: Home
-permalink: 
+permalink: /
 subtitle: 
 hero_title: I'm Niranjan Mukesh, a Mechanical Engineer.
 hero_subtitle: Building technology for human health and mobility.
