@@ -28,24 +28,30 @@ I'm a rising sophomore at Purdue University studying Mechanical Engineering, wit
 
 My work includes a microgravity blood infusion system as a NASA HuLC finalist, control systems for a robotic wheelchair exoskeleton, and published IEEE research on rehabilitation robotics.
 
-<div class="card-row">
-  <div class="info-card">
-    <h3>Projects</h3>
-    <p>From a NASA HuLC-finalist blood infusion system to a robotic wheelchair exoskeleton, explore my technical work.</p>
-    <a href="/projects/" class="btn-outline">View Projects</a>
-  </div>
-  <div class="info-card">
-    <h3>Publications</h3>
-    <p>Published IEEE research on rehabilitation robotics and lower-limb exoskeleton design.</p>
-    <a href="/publications/" class="btn-outline">See Publications</a>
-  </div>
-  <div class="info-card">
-    <h3>CV</h3>
-    <p>Education, research experience, and technical skills — download or view the full resume.</p>
-    <a href="/cv/" class="btn-outline">View CV</a>
-  </div>
+<div class="card-row" markdown="1">
+
+<div class="info-card" markdown="1">
+### Projects
+
+From a NASA HuLC-finalist blood infusion system to a robotic wheelchair exoskeleton, explore my technical work.
+
+[View Projects](/projects/){: class="btn-outline"}
 </div>
 
-<div class="button-row">
-<a href="mailto:niranjanmukesh07@gmail.com" class="btn-outline">Contact</a>
+<div class="info-card" markdown="1">
+### Publications
+
+Published IEEE research on rehabilitation robotics and lower-limb exoskeleton design.
+
+[See Publications](/publications/){: class="btn-outline"}
+</div>
+
+<div class="info-card" markdown="1">
+### CV
+
+Education, research experience, and technical skills — download or view the full resume.
+
+[View CV](/cv/){: class="btn-outline"}
+</div>
+
 </div>
