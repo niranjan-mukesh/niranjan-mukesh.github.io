@@ -23,11 +23,29 @@ latest_posts:
 ---
 <hr>
 <p class="section-label">About Me</p>
+
 I'm a rising sophomore at Purdue University studying Mechanical Engineering, with a focus on medical devices and rehabilitation technology.
+
 My work includes a microgravity blood infusion system as a NASA HuLC finalist, control systems for a robotic wheelchair exoskeleton, and published IEEE research on rehabilitation robotics.
+
+<div class="card-row">
+  <div class="info-card">
+    <h3>Projects</h3>
+    <p>From a NASA HuLC-finalist blood infusion system to a robotic wheelchair exoskeleton, explore my technical work.</p>
+    <a href="/projects/" class="btn-outline">View Projects</a>
+  </div>
+  <div class="info-card">
+    <h3>Publications</h3>
+    <p>Published IEEE research on rehabilitation robotics and lower-limb exoskeleton design.</p>
+    <a href="/publications/" class="btn-outline">See Publications</a>
+  </div>
+  <div class="info-card">
+    <h3>CV</h3>
+    <p>Education, research experience, and technical skills — download or view the full resume.</p>
+    <a href="/cv/" class="btn-outline">View CV</a>
+  </div>
+</div>
+
 <div class="button-row">
-<a href="/cv/" class="btn-gold">CV</a>
-<a href="/projects/" class="btn-gold">Projects</a>
-<a href="/publications/" class="btn-gold">Publications</a>
-<a href="mailto:niranjanmukesh07@gmail.com" class="btn-gold">Contact</a>
+<a href="mailto:niranjanmukesh07@gmail.com" class="btn-outline">Contact</a>
 </div>
