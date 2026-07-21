@@ -36,17 +36,22 @@ body:has(.hero-card) .container.mt-5 {
   margin-bottom: 0;
 }
 
-.clearfix > hr:first-child {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .hero-row {
   display: flex;
   align-items: stretch;
   gap: 64px;
   flex-wrap: wrap;
   flex-direction: row-reverse;
+  margin-bottom: 0;
+}
+
+.clearfix {
+  margin-top: 0;
+}
+
+.clearfix > hr:first-child {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .profile.float-right,
@@ -136,10 +141,10 @@ body:has(.hero-card) .container.mt-5 {
   margin-bottom: 16px;
 }
 
-/* ---- Outline buttons (cards + contact) ---- */
+/* ---- Buttons: gold background, black outline ---- */
 .btn-outline {
   display: inline-block;
-  background: rgba(201, 162, 39, 0.12);
+  background: var(--global-theme-color);
   color: #1F1F1D;
   border: 1.5px solid #1F1F1D;
   border-radius: 8px;
@@ -150,7 +155,7 @@ body:has(.hero-card) .container.mt-5 {
 }
 
 .btn-outline:hover {
-  background: rgba(201, 162, 39, 0.22);
+  background: #B08D2E;
   color: #1F1F1D;
 }
 
@@ -176,7 +181,3 @@ body:has(.hero-card) .container.mt-5 {
   margin-right: auto;
   white-space: nowrap;
 }
-
-
-
-
