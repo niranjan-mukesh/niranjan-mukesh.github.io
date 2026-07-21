@@ -94,24 +94,28 @@ body:has(.hero-card) .container.mt-5 {
   margin-bottom: 0;
 }
 
-/* ---- Section label ---- */
 .section-label {
-  font-size: 12px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--global-theme-color);
-  font-weight: 700;
+  font-weight: 800;
   display: inline-block;
   border-bottom: 3px solid var(--global-theme-color);
-  padding-bottom: 4px;
-  margin-bottom: 20px;
+  padding-bottom: 6px;
+  margin-bottom: 28px;
 }
 
 .clearfix > p {
-  font-size: 1.2rem;
-  line-height: 1.75;
-  margin-bottom: 24px;
+  font-size: 1.4rem;
+  line-height: 1.85;
+  font-weight: 500;
+  margin-bottom: 32px;
 }
+
+
+
+
 
 /* ---- Info cards (Projects / Publications / CV) ---- */
 .card-row {
