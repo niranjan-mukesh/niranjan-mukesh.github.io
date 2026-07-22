@@ -14,19 +14,23 @@ On Earth, transfusions rely on gravity to drive fluid flow. In microgravity, thi
 I was responsible for the peristaltic pump trade study, pump assembly design in Fusion 360, and Arduino-based brushless DC motor control software.
 
 The system was presented to NASA engineers and industry professionals at Marshall Space Flight Center in Huntsville, Alabama.
-Every project has a beautiful feature showcase page.
 
 <div class="row">
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/pump_img.png" title="Pump assembly" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+    <div class="col-sm-6 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/trap.png" title="Bubble trap detail" class="img-fluid rounded z-depth-1" %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
+</div>
+<div class="caption">
+    Left: pump assembly. Right: ePTFE bubble trap.
+</div>
+<div class="row mt-4">
+    <div class="col-12">
         {% include figure.liquid loading="eager" path="assets/img/poster.jpeg" title="Test setup" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    From left: pump assembly, ePTFE bubble trap, and poster with physical prototype
+    Poster with physical prototype.
 </div>
