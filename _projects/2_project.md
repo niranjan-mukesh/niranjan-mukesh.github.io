@@ -2,7 +2,7 @@
 layout: page
 title: Robotic Wheelchair Exoskeleton
 description: Motor design and control system development
-img: assets/img/exoskeleton.jpg
+img: assets/img/completeDesign.PNG
 importance: 2
 category: work
 ---
