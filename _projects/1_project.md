@@ -21,12 +21,12 @@ Every project has a beautiful feature showcase page.
         {% include figure.liquid loading="eager" path="assets/img/pump_img.png" title="Pump assembly" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/pump_assembly_2.jpg" title="Bubble trap detail" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/trap.png" title="Bubble trap detail" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/pump_assembly_3.jpg" title="Test setup" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/poster.jpeg" title="Test setup" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    From left: pump assembly, ePTFE bubble trap, and testing setup at Marshall Space Flight Center.
+    From left: pump assembly, ePTFE bubble trap, and poster with physical prototype
 </div>
