@@ -200,14 +200,14 @@
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
+scss
 .row:has(#toc-sidebar) {
   align-items: stretch;
 }
 
-#toc-sidebar {
+.row:has(#toc-sidebar) > .col-sm-3 {
   border-right: 1px solid var(--global-divider-color);
   padding-right: 24px;
-  min-height: 100%;
 }
 
 #toc-sidebar a {
