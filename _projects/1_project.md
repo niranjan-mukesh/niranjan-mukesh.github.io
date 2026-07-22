@@ -2,7 +2,7 @@
 layout: page
 title: Microgravity Blood Infusion Project
 description: NASA Human Lander Challenge 2026 Finalist
-img: assets/img/mbip.jpg
+img: assets/img/pump_img.jpg
 importance: 1
 category: work
 related_publications: true
