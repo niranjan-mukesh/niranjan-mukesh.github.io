@@ -25,7 +25,7 @@ latest_posts:
 <p class="section-label">About Me</p>
 I'm interested in the intersection of engineering and biocompatibility, with a focus on medical devices and rehabilitation technology. My work includes a microgravity blood infusion system as a NASA HuLC finalist, control systems for a robotic wheelchair exoskeleton, and published IEEE research on rehabilitation robotics.
 <div class="card-row" markdown="1">
-<div class="info-card card-blue" markdown="1">
+<div class="info-card card-black" markdown="1">
 ### Projects
 From a NASA HuLC-finalist blood infusion system to a robotic wheelchair exoskeleton, explore my technical work.
 [View Projects](/projects/){: class="btn-outline btn-blue"}
