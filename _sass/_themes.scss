@@ -72,19 +72,23 @@
   min-width: 280px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
   justify-content: center;
 }
 
 .hero-glow h1 {
   font-weight: 800;
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   line-height: 1.15;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
+  color: #1F1F1D;
 }
 
 .hero-glow p {
-  font-size: 1.15rem;
-  line-height: 1.6;
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.5;
   color: var(--global-text-color-light);
   margin-bottom: 0;
 }
@@ -140,13 +144,21 @@
 }
 
 /* ---- Buttons: gold background, black outline ---- */
+.button-row {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 28px;
+}
+
 .btn-outline {
   display: inline-block;
   background: var(--global-theme-color);
   color: #1F1F1D;
   border: 1.5px solid #1F1F1D;
   border-radius: 8px;
-  padding: 9px 18px;
+  padding: 10px 20px;
   font-weight: 600;
   font-size: 13px;
   text-decoration: none;
@@ -156,15 +168,6 @@
   background: #B08D2E;
   color: #1F1F1D;
 }
-
-.button-row {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 32px;
-}
-
 /* ---- Navbar title fix ---- */
 #navbar .container:not(:has(.navbar-brand)) {
   display: flex;
