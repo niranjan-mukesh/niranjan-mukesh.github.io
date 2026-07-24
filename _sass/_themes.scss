@@ -66,21 +66,11 @@
   display: block;
 }
 
-.hero-glow {
-  flex: 1;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
 .hero-glow h1 {
   font-weight: 800;
   font-size: 2.3rem;
   line-height: 1.15;
-  margin-bottom: 12px;
+  margin-bottom: 20px;
   color: #1F1F1D;
 }
 
@@ -89,28 +79,44 @@
   font-weight: 700;
   line-height: 1.5;
   color: var(--global-text-color-light);
-  margin-bottom: 0;
+  margin-bottom: 24px;
 }
 
 .skill-pills {
   display: flex;
-  gap: 6px;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 14px 0 10px;
+  margin: 0 0 22px;
 }
 
 .skill-pills span {
-  background: rgba(31,31,29,0.06);
-  border: 1px solid #1F1F1D;
   border-radius: 20px;
-  padding: 4px 12px;
-  font-size: 11px;
-  font-weight: 600;
+  padding: 6px 16px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.skill-pills span:nth-child(1) {
+  background: #1E3A8A;
+}
+
+.skill-pills span:nth-child(2) {
+  background: #C9A227;
+  color: #1F1F1D;
+}
+
+.skill-pills span:nth-child(3) {
+  background: #1F1F1D;
+}
+
+.skill-pills span:nth-child(4) {
+  background: #7A5C1E;
 }
 
 .stat-line {
-  font-size: 12px;
+  font-size: 13px;
   color: var(--global-text-color-light);
   font-weight: 600;
   margin: 0;
