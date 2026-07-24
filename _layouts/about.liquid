@@ -11,12 +11,13 @@ layout: default
         <div class="hero-glow">
           <h1>{{ page.hero_title }}</h1>
           {% if page.hero_subtitle %}<p>{{ page.hero_subtitle }}</p>{% endif %}
-          <div class="button-row">
-            <a href="/projects/" class="btn-outline">Projects</a>
-            <a href="/publications/" class="btn-outline">Publications</a>
-            <a href="/cv/" class="btn-outline">CV</a>
-            <a href="mailto:niranjanmukesh07@gmail.com" class="btn-outline">Contact</a>
+          <div class="skill-pills">
+            <span>CAD & Design</span>
+            <span>Embedded Systems</span>
+            <span>Manufacturing</span>
+            <span>Programming</span>
           </div>
+          <p class="stat-line">3+ Major Projects · 1 IEEE Paper · Purdue Class of 2029</p>
         </div>
         {% if page.profile %}
           <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
