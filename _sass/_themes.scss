@@ -253,3 +253,74 @@
   font-size: 1.6rem;
   margin-bottom: 20px;
 }
+
+.card-blue {
+  border-top: 4px solid #1E3A8A;
+  box-shadow: 0 6px 16px rgba(30,58,138,0.08);
+}
+
+.card-gold {
+  border-top: 4px solid #C9A227;
+  box-shadow: 0 6px 16px rgba(201,162,39,0.12);
+}
+
+.card-black {
+  border-top: 4px solid #1F1F1D;
+  box-shadow: 0 6px 16px rgba(31,31,29,0.08);
+}
+
+.info-card h3,
+.info-card p {
+  color: #1F1F1D;
+}
+
+.btn-blue {
+  background: #1E3A8A;
+  border-color: #1E3A8A;
+  color: #FFFFFF;
+}
+
+.btn-blue:hover {
+  background: #14245A;
+  color: #FFFFFF;
+}
+
+.btn-gold {
+  background: #C9A227;
+  border-color: #C9A227;
+  color: #1F1F1D;
+}
+
+.btn-gold:hover {
+  background: #B08D2E;
+}
+
+.btn-black {
+  background: #1F1F1D;
+  border-color: #1F1F1D;
+  color: #FFFFFF;
+}
+
+.btn-black:hover {
+  background: #3A3A38;
+  color: #FFFFFF;
+}
+
+.contact-section {
+  margin-top: 48px;
+  padding: 32px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1E3A8A 0%, #14245A 100%);
+  text-align: center;
+}
+
+.contact-section h3,
+.contact-section p,
+.contact-section a {
+  color: #FFFFFF !important;
+}
+
+.contact-section a {
+  font-weight: 700;
+  text-decoration: underline;
+}
