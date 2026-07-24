@@ -2,9 +2,22 @@
 layout: default
 ---
 <div class="post">
+  <header class="post-header">
+    <p class="desc">{{ page.subtitle }}</p>
+  </header>
   <article>
     <div class="hero-card">
       <div class="hero-row">
+        <div class="hero-glow">
+          <h1>{{ page.hero_title }}</h1>
+          {% if page.hero_subtitle %}<p>{{ page.hero_subtitle }}</p>{% endif %}
+          <div class="button-row">
+            <a href="/projects/" class="btn-outline">Projects</a>
+            <a href="/publications/" class="btn-outline">Publications</a>
+            <a href="/cv/" class="btn-outline">CV</a>
+            <a href="mailto:niranjanmukesh07@gmail.com" class="btn-outline">Contact</a>
+          </div>
+        </div>
         {% if page.profile %}
           <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
             {% if page.profile.image %}
@@ -27,31 +40,19 @@ layout: default
             {% endif %}
           </div>
         {% endif %}
-        {% if page.hero_title %}
-          <div class="hero-glow">
-            <h1>{{ page.hero_title }}</h1>
-            {% if page.hero_subtitle %}<p>{{ page.hero_subtitle }}</p>{% endif %}
-          </div>
-        {% endif %}
       </div>
     </div>
     <div class="clearfix">{{ content }}</div>
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
+      <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a></h2>
       {% include news.liquid limit=true %}
     {% endif %}
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
+      <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a></h2>
       {% include latest_posts.liquid %}
     {% endif %}
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
+      <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a></h2>
       {% include selected_papers.liquid %}
     {% endif %}
     {% if page.social %}
