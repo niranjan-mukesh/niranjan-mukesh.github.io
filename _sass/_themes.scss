@@ -36,10 +36,15 @@
   align-items: stretch;
   gap: 64px;
   flex-wrap: wrap;
-  flex-direction: row-reverse;
   margin-bottom: 0 !important;
 }
 
+.profile.float-right,
+.profile.float-left {
+  float: none;
+  margin: 0;
+  flex: 0 0 300px;
+}
 .clearfix {
   margin-top: 0 !important;
 }
@@ -309,17 +314,10 @@
   margin-top: 48px;
   padding: 32px;
   border-radius: 16px;
-  background: linear-gradient(135deg, #1E3A8A 0%, #14245A 100%);
+  background: linear-gradient(135deg, #1A1610 0%, #2C2620 100%);
   text-align: center;
 }
 
-.contact-section h3,
-.contact-section p,
 .contact-section a {
-  color: #FFFFFF !important;
-}
-
-.contact-section a {
-  font-weight: 700;
-  text-decoration: underline;
+  color: #C9A227 !important;
 }
