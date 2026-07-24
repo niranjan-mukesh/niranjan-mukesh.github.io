@@ -4,7 +4,7 @@ title: Home
 permalink: /
 subtitle: 
 hero_title: I'm Niranjan Mukesh
-hero_subtitle: I'm a rising sophomore at Purdue University studying Mechanical Engineering 
+hero_subtitle: Rising sophomore at Purdue University studying Mechanical Engineering 
 profile:
   align: right
   image: prof_pic.jpg
@@ -39,5 +39,10 @@ Published IEEE research on rehabilitation robotics and lower-limb exoskeleton de
 ### CV
 Education, research experience, and technical skills — download or view the full resume.
 [View CV](/cv/){: class="btn-outline"}
+</div>
+<div class="info-card" markdown="1">
+### Contact
+Feel free to reach out about research, internships, or collaboration.
+[Get in Touch](mailto:niranjanmukesh07@gmail.com){: class="btn-outline"}
 </div>
 </div>
