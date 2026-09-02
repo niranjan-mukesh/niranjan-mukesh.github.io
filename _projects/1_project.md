@@ -7,7 +7,7 @@ importance: 1
 category: work
 related_publications: false
 ---
-Served as Electrical Engineering Co-Lead for Purdue University's NASA Human Lander Challenge 2026 finalist team, the Microgravity Blood Infusion Project (MBIP) is a blood transfusion system designed to operate in the absence of gravity.
+Served as Electrical Engineering Co-Lead for Purdue University's NASA Human Lander Challenge 2026 finalist team, the Microgravity Blood Infusion Project (MBIP) is a blood transfusion system designed to operate in the absence of gravity. Now serving as Operations Director, coordinating internal communications, organizational records, and equipment tracking to keep active R&D efforts on track across the group. 
 
 On Earth, transfusions rely on gravity to drive fluid flow. In microgravity, this assumption breaks down entirely. Our system addresses this through a peristaltic pump, ePTFE bubble trap, and ultrasonic sensors to safely deliver rehydrated freeze-dried blood product at controlled flow rates of 100-250 mL/hr with ±5% accuracy.
 
