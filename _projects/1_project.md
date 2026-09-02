@@ -5,7 +5,7 @@ description: NASA Human Lander Challenge 2026 Finalist
 img: assets/img/pump_img.png
 importance: 1
 category: work
-related_publications: true
+related_publications: false
 ---
 Served as Electrical Engineering Co-Lead for Purdue University's NASA Human Lander Challenge 2026 finalist team, the Microgravity Blood Infusion Project (MBIP) is a blood transfusion system designed to operate in the absence of gravity.
 
