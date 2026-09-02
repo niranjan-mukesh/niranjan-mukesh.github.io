@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Microgravity Blood Infusion Project
-description: NASA Human Lander Challenge 2026 Finalist
+description: Designed a fluid delivery pump for simulated microgravity blood transfusions, along with a system to detect and remove air bubbles for patient safety.
 img: assets/img/pump_img.png
 importance: 1
 category: work
