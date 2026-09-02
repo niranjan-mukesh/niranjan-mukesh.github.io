@@ -4,7 +4,7 @@ permalink: /publications/
 title: Publications
 description: A list of publications I am apart of, sorted by date.
 nav: true
-nav_order: 2
+nav_order: 3
 ---
 
 <!-- _pages/publications.md -->
