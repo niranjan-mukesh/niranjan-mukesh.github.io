@@ -14,7 +14,7 @@ I have since continued my involvement, working  with Dr. Voicu on two primary ar
 This project sits at the intersection of mechanical design and embedded systems, with the goal of building reliable, effective rehabilitation technology for real users.
 
 <div class="row">
-    <div class="col-sm-6 mt-3 mt-md-0">
+    <div class="col-sm-10 mx-auto">
         {% include figure.liquid loading="eager" path="assets/img/exo_cad.png" title="Exoskeleton CAD" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
