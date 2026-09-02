@@ -11,8 +11,6 @@ Served as Electrical Engineering Co-Lead for Purdue University's NASA Human Land
 
 On Earth, transfusions rely on gravity to drive fluid flow. In microgravity, this assumption breaks down entirely. Our system addresses this through a peristaltic pump, ePTFE bubble trap, and ultrasonic sensors to safely deliver rehydrated freeze-dried blood product at controlled flow rates of 100-250 mL/hr with ±5% accuracy.
 
-I was responsible for the peristaltic pump trade study, pump assembly design in Fusion 360, and Arduino-based brushless DC motor control software.
-
 The system was presented to NASA engineers and industry professionals at Marshall Space Flight Center in Huntsville, Alabama.
 
 <div class="row">
