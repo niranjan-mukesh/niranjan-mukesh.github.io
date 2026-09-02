@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Robotic Wheelchair Exoskeleton
-description: Motor design and control system development
+description: Helped design a wheelchair-integrated exoskeleton for lower-limb rehabilitation, with work published in a peer-reviewed IEEE paper.
 img: assets/img/completeDesign.PNG
 importance: 2
 category: work
