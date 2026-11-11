@@ -1,7 +1,7 @@
 ---
 layout: about
 title: Home
-permalink: /
+permalink: /classic/
 subtitle: 
 hero_title: I'm Niranjan Mukesh
 hero_subtitle: Rising sophomore at Purdue University studying Mechanical Engineering 
