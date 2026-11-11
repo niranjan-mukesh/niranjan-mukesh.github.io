@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Niranjan Mukesh — Mechanical Engineering, Purdue</title>
+<meta name="description" content="Niranjan Mukesh is a mechanical engineering student at Purdue building medical hardware: microgravity blood infusion, a wheelchair-integrated exoskeleton, and a tremor-suppression glove.">
+<meta property="og:title" content="Niranjan Mukesh">
+<meta property="og:description" content="Mechanical engineering at Purdue. Medical hardware for space and rehabilitation.">
+<meta property="og:image" content="assets/img/poster.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%231F1F1D'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%23C9A227' stroke-width='2.5'/%3E%3Cpath d='M16 4v24M4 16h24' stroke='%23C9A227' stroke-width='1.2'/%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#FFFFFF;
+  --text:#1F1F1D;
+  --text-2:#6B6A64;
+  --gold:#C9A227;
+  --gold-h:#B08D2E;
+  --gold-soft:#F5E2B0;
+  --card:#FAFAF8;
+  --divider:rgba(0,0,0,.1);
+  --dark:#1A1610;
+  --dark-2:#2C2620;
+  --cream:#E8DFC4;
+  --font:"Roboto",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --pad:clamp(20px,4vw,48px);
+  --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font);font-size:18px;line-height:1.65}
+img{max-width:100%;display:block}
+a{color:inherit}
+::selection{background:var(--gold-soft)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* Nav */
+header.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--divider)}
+.nav .wrap{display:flex;align-items:center;gap:28px;height:58px}
+.mono{font-weight:700;font-size:1.05rem;text-decoration:none;white-space:nowrap}
+.nav ul{display:flex;gap:24px;list-style:none;margin:0 0 0 auto;padding:0;font-size:15px}
+.nav ul a{text-decoration:none;color:var(--text);padding:6px 0;transition:color .15s}
+.nav ul a:hover,.nav ul a[aria-current]{color:var(--gold)}
+@media (max-width:860px){.nav ul{display:none}.nav .btn{margin-left:auto}}
+
+/* Buttons and pills (same as current site) */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:8px;padding:11px 20px;font:600 14px/1.2 var(--font);text-decoration:none;border:1.5px solid var(--text);background:var(--text);color:#fff;cursor:pointer;transition:background .15s,border-color .15s,color .15s}
+.btn:hover{background:#3A3A38;border-color:#3A3A38}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:var(--text)}
+.btn.gold:hover{background:var(--gold-h);border-color:var(--gold-h)}
+.btn.ghost{background:transparent;color:var(--text)}
+.btn.ghost:hover{background:var(--text);color:#fff}
+.btn.small{padding:8px 14px;font-size:13px}
+.pills{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 24px;padding:0;list-style:none}
+.pills li{border-radius:20px;padding:6px 16px;font-size:12px;font-weight:700;background:var(--text);color:#fff}
+.pills li:nth-child(odd){background:var(--gold);color:var(--text)}
+.chip{font:700 12px/1 var(--font);border-radius:20px;border:1.5px solid var(--text);background:#fff;color:var(--text);padding:8px 14px;cursor:pointer;transition:background .15s,color .15s}
+.chip[aria-pressed="true"]{background:var(--text);color:#fff}
+.chip:disabled{opacity:.4;cursor:default}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#FFFFFF 0%,var(--gold-soft) 100%);padding:clamp(36px,5vw,64px) 0 clamp(44px,6vw,72px)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:clamp(24px,4vw,56px);align-items:center}
+@media (max-width:960px){.hero-grid{grid-template-columns:1fr}}
+.hello{margin:0 0 6px;font-size:1.15rem;font-weight:700;color:var(--gold-h)}
+.name{font-weight:900;font-size:clamp(46px,6.4vw,84px);line-height:1;letter-spacing:-.02em;margin:0 0 18px}
+.lede{font-size:clamp(18px,1.6vw,21px);font-weight:500;line-height:1.55;color:var(--text-2);max-width:30em;margin:0 0 22px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:30px}
+.facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:0;max-width:600px}
+@media (max-width:520px){.facts{grid-template-columns:1fr 1fr}}
+.facts div{background:rgba(255,255,255,.75);border-radius:12px;padding:10px 16px;border-top:3px solid var(--gold);box-shadow:0 6px 16px rgba(201,162,39,.12)}
+.facts div:nth-child(2){border-top-color:var(--text);box-shadow:0 6px 16px rgba(31,31,29,.08)}
+.facts dt{font-size:12px;font-weight:500;color:var(--text-2)}
+.facts dd{margin:0;font-weight:800;font-size:16px}
+
+.rig{position:relative;margin:0;background:#fff;border-radius:16px;box-shadow:0 18px 40px rgba(31,31,29,.12);overflow:hidden;display:flex;flex-direction:column}
+.rig canvas{width:100%;height:420px;touch-action:none;cursor:crosshair;display:block}
+.rig-bar{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 16px;align-items:center;padding:12px 18px;background:var(--card);border-top:1px solid var(--divider);font-size:13px;color:var(--text-2)}
+.rig-bar b{color:var(--text);font-weight:800;font-variant-numeric:tabular-nums}
+.rig-bar .live{color:var(--gold-h);font-weight:700}
+.rig-note{position:absolute;left:18px;top:16px;font-size:13px;font-weight:500;color:var(--text-2);max-width:19em;line-height:1.45;pointer-events:none;margin:0}
+.rig-mode{position:absolute;right:14px;top:14px}
+
+/* Sections */
+section{padding:clamp(64px,8vw,104px) 0 0}
+.label{font-size:14px;text-transform:uppercase;letter-spacing:.08em;color:var(--gold);font-weight:800;display:inline-block;border-bottom:3px solid var(--gold);padding-bottom:6px;margin:0 0 14px}
+.sec-head{margin-bottom:36px}
+.sec-head h2{margin:0 0 8px;font-weight:800;font-size:clamp(30px,3.6vw,42px);line-height:1.15}
+.sec-head p{margin:0;color:var(--text-2);font-size:17px;max-width:40em}
+.sec-head .label{color:var(--gold);font-size:14px;margin:0 0 14px}
+
+/* Projects */
+.project{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);gap:clamp(24px,4vw,56px);margin-bottom:clamp(56px,7vw,88px);align-items:start}
+@media (max-width:960px){.project{grid-template-columns:1fr}}
+.project h3{font-weight:800;font-size:clamp(26px,2.6vw,32px);line-height:1.15;margin:0 0 10px}
+.project .role{font-size:14px;font-weight:500;color:var(--text-2);margin:0 0 16px}
+.project p{margin:0 0 16px;max-width:36em}
+.badge{display:inline-flex;align-items:center;gap:8px;border-radius:20px;background:var(--gold);color:var(--text);padding:6px 14px;font-weight:700;font-size:13px;margin:0 0 16px}
+.badge svg{width:14px;height:14px}
+.specs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0 0}
+.specs div{background:var(--card);border-radius:12px;padding:12px 16px;border-top:3px solid var(--gold)}
+.specs div:nth-child(2),.specs div:nth-child(3){border-top-color:var(--text)}
+.specs dt{font-size:12.5px;color:var(--text-2)}
+.specs dd{margin:2px 0 0;font-weight:800;font-size:21px}
+.specs dd small{font-weight:500;font-size:13px;color:var(--text-2)}
+
+.lab{background:linear-gradient(135deg,var(--dark) 0%,var(--dark-2) 100%);color:#F5F0E6;border-radius:16px;overflow:hidden;box-shadow:0 18px 40px rgba(31,31,29,.18)}
+.lab canvas{display:block;width:100%;height:280px}
+.lab-ctrl{display:flex;flex-wrap:wrap;align-items:center;gap:12px 20px;padding:14px 18px;border-top:1px solid rgba(201,162,39,.2);font-size:14px}
+.lab-ctrl label{display:flex;align-items:center;gap:10px;font-weight:500}
+.lab-ctrl output{color:var(--gold);font-weight:800;min-width:7.5ch;display:inline-block;font-variant-numeric:tabular-nums}
+.lab-ctrl .stat{color:#B8B0A0}
+.lab-ctrl .stat b{color:#F5F0E6}
+.lab-ctrl .alarm{color:#FF9B7A;font-weight:700}
+.lab .chip{background:transparent;color:#F5F0E6;border-color:rgba(245,240,230,.4)}
+.lab .chip[aria-pressed="true"]{background:var(--gold);color:var(--dark);border-color:var(--gold)}
+input[type=range]{accent-color:var(--gold);width:160px}
+.lab-cap{padding:0 18px 16px;font-size:13px;color:#B8B0A0;margin:0}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:12px}
+.gallery.two{grid-template-columns:1fr 1fr}
+.gallery button{padding:0;border:0;border-radius:12px;background:#fff;cursor:zoom-in;aspect-ratio:4/3;overflow:hidden;position:relative;box-shadow:0 6px 16px rgba(31,31,29,.1)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .35s}
+.gallery button:hover img{transform:scale(1.05)}
+.gallery span{position:absolute;left:8px;bottom:8px;background:rgba(31,31,29,.85);color:#fff;border-radius:20px;font-size:11px;font-weight:700;padding:3px 10px}
+
+.plot{background:#fff;border-radius:16px;box-shadow:0 18px 40px rgba(31,31,29,.1);overflow:hidden}
+.plot canvas{display:block;width:100%;height:240px}
+.plot .legend{display:flex;flex-wrap:wrap;gap:6px 18px;padding:12px 18px;background:var(--card);border-top:1px solid var(--divider);font-size:12.5px;color:var(--text-2)}
+.key{display:inline-block;width:22px;height:0;border-top:2px solid;vertical-align:middle;margin-right:6px}
+
+.minor{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:820px){.minor{grid-template-columns:1fr}}
+.minor article{background:var(--card);border-radius:12px;padding:28px;border-top:4px solid var(--gold);box-shadow:0 6px 16px rgba(201,162,39,.12)}
+.minor article+article{border-top-color:var(--text);box-shadow:0 6px 16px rgba(31,31,29,.08)}
+.minor h3{margin:0 0 6px;font-weight:800;font-size:22px;line-height:1.25}
+.minor .role{font-size:14px;color:var(--text-2);margin:0 0 14px}
+.minor p{margin:0 0 10px;font-size:16.5px}
+.status{display:inline-block;font-size:11px;font-weight:700;border-radius:20px;background:var(--text);color:#fff;padding:3px 10px;margin-left:6px;vertical-align:middle}
+
+.trade{margin-top:16px;background:#fff;border-radius:12px;border:1px solid var(--divider);overflow:hidden}
+.trade-tabs{display:flex;gap:6px;padding:8px;background:var(--card);border-bottom:1px solid var(--divider)}
+.trade-tabs button{flex:1;font:700 13px var(--font);padding:8px;border:0;border-radius:8px;background:transparent;cursor:pointer;color:var(--text-2)}
+.trade-tabs button[aria-selected="true"]{background:var(--text);color:#fff}
+.trade-body{padding:14px 16px;font-size:15.5px}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:12px 0 0}
+.pc dt{font-size:12px;font-weight:700;color:var(--gold-h)}
+.pc dd{margin:2px 0 0;font-size:14.5px}
+.minor .trade-body .note{font-size:13px;color:var(--text-2);margin:12px 0 0}
+
+/* Publication */
+.pub{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:24px;align-items:start;background:var(--card);border-radius:12px;border-top:4px solid var(--gold);box-shadow:0 6px 16px rgba(201,162,39,.12);padding:clamp(22px,3vw,34px)}
+@media (max-width:760px){.pub{grid-template-columns:1fr}}
+.pub .venue{display:inline-block;font-size:12px;font-weight:700;border-radius:20px;background:var(--text);color:#fff;padding:4px 12px;margin:0 0 12px}
+.pub h3{margin:0 0 10px;font-weight:800;font-size:clamp(21px,2.2vw,26px);line-height:1.3;max-width:30em}
+.pub .authors{margin:0;color:var(--text-2);font-size:15px}
+.pub .authors b{color:var(--text)}
+.pub-actions{display:flex;flex-direction:column;gap:10px;min-width:180px}
+@media (max-width:760px){.pub-actions{flex-direction:row;flex-wrap:wrap}}
+.copy-ok{font-size:13px;font-weight:700;color:var(--gold-h)}
+
+/* Experience timeline */
+.timeline{list-style:none;margin:0;padding:0 0 0 28px;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:10px;bottom:10px;width:3px;background:linear-gradient(var(--gold),var(--gold-soft));border-radius:3px}
+.timeline > li{position:relative;margin:0 0 14px}
+.timeline > li::before{content:"";position:absolute;left:-28px;top:22px;width:17px;height:17px;border-radius:50%;background:#fff;border:3px solid var(--gold)}
+.timeline > li.now::before{background:var(--gold)}
+.timeline details{background:var(--card);border-radius:12px;transition:box-shadow .2s}
+.timeline details[open]{box-shadow:0 6px 16px rgba(201,162,39,.14)}
+.timeline summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto 22px;gap:16px;padding:16px 20px;align-items:center}
+.timeline summary::-webkit-details-marker{display:none}
+.timeline .title{font-weight:800;font-size:17.5px;line-height:1.3}
+.timeline .org{display:block;font-weight:500;color:var(--text-2);font-size:15px}
+.timeline .when{font-size:13px;font-weight:700;color:var(--gold-h);white-space:nowrap}
+.tog{width:18px;height:18px;position:relative}
+.tog::before,.tog::after{content:"";position:absolute;background:var(--text);left:2px;right:2px;top:8px;height:2px;border-radius:2px;transition:transform .2s}
+.tog::after{transform:rotate(90deg)}
+details[open] .tog::after{transform:rotate(0)}
+.timeline ul{margin:0;padding:0 24px 18px 40px;font-size:16px}
+.timeline li li{margin:0 0 8px}
+.timeline li li::marker{color:var(--gold)}
+@media (max-width:640px){.timeline summary{grid-template-columns:1fr 22px}.timeline .when{grid-column:1;grid-row:2;white-space:normal}.tog{grid-column:2;grid-row:1}.timeline ul{padding:0 16px 16px 34px}}
+
+/* Skills */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.skills div{background:var(--card);border-radius:12px;padding:20px;border-top:4px solid var(--gold);box-shadow:0 6px 16px rgba(201,162,39,.1)}
+.skills div:nth-child(even){border-top-color:var(--text);box-shadow:0 6px 16px rgba(31,31,29,.07)}
+.skills h3{margin:0 0 12px;font-size:16px;font-weight:800}
+.skills ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px}
+.skills li{font-size:13.5px;font-weight:500;border-radius:20px;padding:4px 12px;background:#fff;border:1px solid var(--divider);transition:background .15s,border-color .15s}
+.skills li:hover{background:var(--gold-soft);border-color:var(--gold)}
+
+/* About */
+.about{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(24px,5vw,64px);align-items:center}
+@media (max-width:860px){.about{grid-template-columns:1fr}}
+.about p{font-size:19px;line-height:1.8;margin:0 0 18px;max-width:36em}
+.about img{width:100%;aspect-ratio:41/45;object-fit:cover;border-radius:16px;box-shadow:0 18px 40px rgba(31,31,29,.14)}
+
+/* Contact */
+.contact{margin:0 0 clamp(56px,7vw,88px);border-radius:16px;background:linear-gradient(135deg,var(--dark) 0%,var(--dark-2) 100%);color:#fff;padding:clamp(32px,5vw,56px);text-align:center}
+.contact h2{margin:0 0 10px;font-size:clamp(26px,3vw,34px);font-weight:800}
+.contact p{color:var(--cream);font-size:16px;margin:0 0 22px}
+.contact .links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px}
+.contact .btn.ghost{color:#fff;border-color:rgba(255,255,255,.5)}
+.contact .btn.ghost:hover{background:#fff;color:var(--text)}
+.contact .email{display:block;margin:22px 0 0;color:var(--gold);font-weight:800;font-size:17px}
+footer{background:var(--dark);color:#B8B0A0;font-size:13px;padding:22px 0}
+
+/* Lightbox */
+dialog.lb{border:0;border-radius:16px;padding:0;background:#fff;max-width:min(1200px,94vw);max-height:92vh;overflow:hidden}
+dialog.lb::backdrop{background:rgba(26,22,16,.85)}
+dialog.lb img{max-height:80vh;width:auto;margin:0 auto}
+dialog.lb .lb-bar{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 16px;border-top:1px solid var(--divider);font-size:14px}
+
+@media (prefers-reduced-motion:no-preference){
+  .hello,.name,.lede,.cta,.facts{animation:rise .8s cubic-bezier(.2,.7,.1,1) both}
+  .name{animation-delay:.06s}.lede{animation-delay:.14s}.cta{animation-delay:.2s}.facts{animation-delay:.26s}
+  .rig{animation:rise .9s .1s cubic-bezier(.2,.7,.1,1) both}
+  @keyframes rise{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="mono" href="#top">Niranjan Mukesh</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn small gold" href="assets/pdf/NM_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- HERO -->
+<div class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="hello">Hi, I'm</p>
+      <h1 class="name">Niranjan Mukesh</h1>
+      <p class="lede">Mechanical engineering sophomore at Purdue. I build medical hardware for hard places: blood transfusion in microgravity, a wheelchair-mounted rehab exoskeleton, and a glove that damps hand tremor.</p>
+      <ul class="pills" aria-label="Focus areas"><li>CAD &amp; Design</li><li>Embedded Systems</li><li>Manufacturing</li><li>Programming</li></ul>
+      <div class="cta">
+        <a class="btn gold" href="#work">See my work</a>
+        <a class="btn ghost" href="#contact">Get in touch</a>
+      </div>
+      <dl class="facts">
+        <div><dt>NASA Human Lander Challenge</dt><dd>Finalist, 1 of 12</dd></div>
+        <div><dt>IEEE SoutheastCon 2025</dt><dd>Co-author</dd></div>
+        <div><dt>Purdue BSME</dt><dd>GPA 3.84</dd></div>
+      </dl>
+    </div>
+
+    <figure class="rig">
+      <canvas id="exo" aria-label="Interactive drawing of a wheelchair-mounted leg exoskeleton. Move the pointer and the knee and ankle joints solve to reach it."></canvas>
+      <p class="rig-note" id="rigNote">Move your pointer over the drawing. The knee and ankle solve for the toe in real time, the same two-joint problem as the exoskeleton I helped build.</p>
+      <div class="rig-mode"><button class="chip" id="trialBtn" aria-pressed="false">Run sinusoidal trial</button></div>
+      <figcaption class="rig-bar">
+        <span>Knee <b id="kneeOut">90.0°</b></span>
+        <span>Ankle <b id="ankleOut">0.0°</b></span>
+        <span>Tracking error <b id="errOut">0.0%</b></span>
+        <span id="modeOut" class="live">Idle</span>
+      </figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- WORK -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Projects</p>
+      <h2>Selected work</h2>
+      <p>Two systems I've designed, built and tested. Each has a small simulation you can try.</p>
+    </div>
+
+    <!-- MBIP -->
+    <article class="project" aria-labelledby="mbip-h">
+      <div>
+        <div class="badge"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 1l2 4.6 5 .5-3.8 3.3 1.1 4.9L8 11.8 3.7 14.3l1.1-4.9L1 6.1l5-.5z" fill="currentColor"/></svg>NASA HuLC 2026 finalist, 1 of 12 teams</div>
+        <h3 id="mbip-h">Microgravity Blood Infusion Pump</h3>
+        <p class="role">Space Biomedical Systems, Purdue Aerospace Medicine VIP. Founding operations director and medical instruments EE co-lead, Aug 2025 – present.</p>
+        <p>On Earth, an IV bag relies on gravity to push blood and float air bubbles out of the line. In microgravity neither happens, so a single stray bubble can reach the patient. We designed a gravity-independent transfusion system for reconstituted red blood cells that fits in an ISS locker.</p>
+        <p>A peristaltic pump drives the flow. Air is pulled out through a vacuum-backed ePTFE membrane bubble trap, and an ultrasonic air-in-line sensor stops the pump if anything gets past. I designed the 28 V ISS rack power distribution — fuse, TVS and bulk-capacitor protection, buck-regulated 9 V and 5 V rails, and a MOSFET driver with flyback protection for the vacuum pump. We presented it to NASA engineers at Marshall Space Flight Center.</p>
+        <dl class="specs">
+          <div><dt>Pump range</dt><dd>60–999 <small>mL/hr</small></dd></div>
+          <div><dt>Bus</dt><dd>28 V <small>ISS rack</small></dd></div>
+          <div><dt>Air-in-line threshold</dt><dd>1 µL</dd></div>
+          <div><dt>Margin under 20 µL limit</dt><dd>20×</dd></div>
+        </dl>
+      </div>
+      <div>
+        <div class="lab">
+          <canvas id="flow" aria-label="Simulation of the infusion line: bag, bubble trap, ultrasonic sensor, peristaltic pump and patient. Bubbles travel down the line; the trap removes them."></canvas>
+          <div class="lab-ctrl">
+            <label>Flow rate <input type="range" id="rate" min="60" max="999" step="1" value="250" aria-describedby="rateOut"> <output id="rateOut">250 mL/hr</output></label>
+            <button class="chip" id="trapBtn" aria-pressed="true">Bubble trap on</button>
+            <button class="chip" id="resetBtn" disabled>Reset alarm</button>
+            <span class="stat">Trapped <b id="trapped">0</b></span>
+            <span class="stat">Alarms <b id="alarms">0</b></span>
+            <span id="alarmMsg" class="alarm" role="status" aria-live="polite"></span>
+          </div>
+          <p class="lab-cap">Simplified simulation. Turn the trap off to see the sensor catch a bubble and halt the pump.</p>
+        </div>
+        <div class="gallery">
+          <button data-full="assets/img/pump.jpg" data-cap="Pump and bubble trap assembly"><img src="assets/img/pump.jpg" alt="CAD render of the air bubble trap connected by tubing to a peristaltic pump" loading="lazy"><span>Assembly</span></button>
+          <button data-full="assets/img/trap.jpg" data-cap="ePTFE bubble trap: barbed bulkheads for blood line and vacuum, O-ring groove for an airtight seal"><img src="assets/img/trap.jpg" alt="Labeled CAD render of the ePTFE bubble trap" loading="lazy"><span>Bubble trap</span></button>
+          <button data-full="assets/img/poster.jpg" data-cap="Poster and physical prototypes at the NASA Human Lander Challenge"><img src="assets/img/poster.jpg" alt="Research poster titled Microgravity Blood Infusion Pump with prototypes on a table" loading="lazy"><span>Poster</span></button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Exoskeleton -->
+    <article class="project" aria-labelledby="exo-h">
+      <div>
+        <h3 id="exo-h">Wheelchair-integrated rehab exoskeleton</h3>
+        <p class="role">Kennesaw State University Mechatronics. Undergraduate researcher, Aug 2024 – Aug 2026, with Dr. Razvan Voicu.</p>
+        <p>People who use wheelchairs lose lower-limb muscle when their legs don't move. Rehab usually means transferring the patient to a separate machine. This 2-DOF knee and ankle exoskeleton mounts to the wheelchair and runs off its battery, so therapy can happen in the chair.</p>
+        <p>I designed the modular power and mounting system, motor mounts for CubeMars AK10-9 actuators, and motor control on a Raspberry Pi over CAN. We verified the controller on an encoder-instrumented rig with coupled sinusoidal knee and ankle trials. The work is published at IEEE SoutheastCon 2025.</p>
+        <dl class="specs">
+          <div><dt>Degrees of freedom</dt><dd>2 <small>knee + ankle</small></dd></div>
+          <div><dt>Tracking error</dt><dd>±5%</dd></div>
+          <div><dt>Assistive torque</dt><dd>5 N·m <small>stable</small></dd></div>
+          <div><dt>Control</dt><dd>RPi + CAN</dd></div>
+        </dl>
+      </div>
+      <div>
+        <div class="plot">
+          <canvas id="track" aria-label="Plot of reference and measured knee and ankle angles over time during a sinusoidal trial, with a five percent tolerance band."></canvas>
+          <div class="legend">
+            <span><i class="key" style="border-color:#1F1F1D;border-top-style:dashed"></i>Knee reference</span>
+            <span><i class="key" style="border-color:#1F1F1D"></i>Knee measured</span>
+            <span><i class="key" style="border-color:#B08D2E;border-top-style:dashed"></i>Ankle reference</span>
+            <span><i class="key" style="border-color:#B08D2E"></i>Ankle measured</span>
+            <span><i class="key" style="border-color:#F5E2B0;border-top-width:8px"></i>±5% band</span>
+            <span style="margin-left:auto">Illustration of a coupled sinusoidal trial</span>
+          </div>
+        </div>
+        <div class="gallery two">
+          <button data-full="assets/img/exo-cad.jpg" data-cap="Complete exoskeleton CAD assembly"><img src="assets/img/exo-cad.jpg" alt="CAD render of the leg exoskeleton on an aluminum extrusion frame" loading="lazy"><span>CAD assembly</span></button>
+          <button data-full="assets/img/exo-build.jpg" data-cap="Top: CAD and exploded view. Bottom: physical prototype mounted to a wheelchair"><img src="assets/img/exo-build.jpg" alt="Exploded CAD view and photo of the exoskeleton prototype mounted on a wheelchair" loading="lazy" style="object-position:center 70%"><span>Prototype</span></button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Smaller work -->
+    <div class="minor">
+      <article>
+        <h3>Tremor suppression glove <span class="status">In progress</span></h3>
+        <p class="role">Purdue MIND. Lead mechanical engineer, Aug 2026 – present.</p>
+        <p>A glove to restore hand function for people with pathological tremor, built in three tiers: IMU tracking, sEMG co-contraction detection, and mechanical damping. I'm leading the mechanical design and a custom KiCad PCB that replaces the prototype's breadboard wiring.</p>
+        <div class="trade">
+          <div class="trade-tabs" role="tablist" aria-label="Damping concepts in the trade study">
+            <button role="tab" aria-selected="true" aria-controls="tp" id="t-tuned" data-k="tuned">Tuned mass</button>
+            <button role="tab" aria-selected="false" aria-controls="tp" id="t-jam" data-k="jam">Layer jamming</button>
+          </div>
+          <div class="trade-body" role="tabpanel" id="tp" aria-labelledby="t-tuned">
+            <span id="tradeText">A small mass on a spring, tuned to the tremor frequency, absorbs the oscillation passively.</span>
+            <dl class="pc"><div><dt>Strength</dt><dd id="pcS"></dd></div><div><dt>Watch for</dt><dd id="pcW"></dd></div></dl>
+            <p class="note">Being compared on attenuation, added mass and wearability, with bench testing on a tremor shaker planned before human testing.</p>
+          </div>
+        </div>
+      </article>
+      <article>
+        <h3>Electric racing kart</h3>
+        <p class="role">Purdue Electric Vehicle Club. Karting team member, Aug 2025 – May 2026.</p>
+        <p>Built and tested a fully electric, driver-operated kart for the Electric Vehicle Grand Prix with a team of 10+ over a 10-month build cycle.</p>
+        <p>I worked on the split-axle drivetrain, redesigning gear ratios to improve torque distribution and cut drivetrain losses relative to earlier versions.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Publications</p>
+      <h2>Research</h2>
+      <p>Peer-reviewed work on rehabilitation robotics.</p>
+    </div>
+    <article class="pub">
+      <div>
+        <p class="venue">IEEE SoutheastCon 2025, pp. 1632–1638</p>
+        <h3>Seat-Focused Multi-DOF Exoskeleton Wheelchair Synergy for Continuous Lower-Limb Rehabilitation</h3>
+        <p class="authors">R. C. Voicu, C. F. Freeman, C. E. Garretson, Z. M. Sun, R. H. Bonus, Z. A. Slutzky, <b>N. Mukesh</b>, M. H. Tanveer, Y. Tello, Y. Chang</p>
+        <p style="margin:14px 0 0;font-size:16px;max-width:44em">Covers the system's mechanical architecture, controller formulation and experimental validation.</p>
+      </div>
+      <div class="pub-actions">
+        <a class="btn small" href="https://doi.org/10.1109/SoutheastCon56624.2025.10971706" target="_blank" rel="noopener">Read on IEEE Xplore</a>
+        <button class="btn small ghost" id="citeBtn">Copy BibTeX</button>
+        <span class="copy-ok" id="citeOk" role="status" aria-live="polite"></span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Experience</p>
+      <h2>Where I've worked</h2>
+      <p>Most recent first. Open any role for details.</p>
+    </div>
+    <ol class="timeline" reversed>
+        <li class="now"><details>
+          <summary><span class="title">Lead mechanical engineer, tremor glove<span class="org">Purdue Medical Innovation Networking and Design Club (MIND)</span></span><span class="when">Aug 2026 – present</span><span class="tog" aria-hidden="true"></span></summary>
+          <ul><li>Leading mechanical design of a tremor suppression glove with IMU tracking, sEMG co-contraction detection and mechanical damping.</li><li>Running a trade study of tuned-mass and layer-jamming dampers on attenuation, added mass and wearability.</li><li>Designing a KiCad PCB that integrates the IMU and sEMG electronics into a wearable form factor.</li></ul>
+        </details></li>
+        <li><details>
+          <summary><span class="title">Karting team member<span class="org">Purdue Electric Vehicle Club</span></span><span class="when">Aug 2025 – May 2026</span><span class="tog" aria-hidden="true"></span></summary>
+          <ul><li>Built and tested an electric racing kart with a 10+ member team over a 10-month build cycle.</li><li>Optimized a split-axle drivetrain through redesigned gear ratios, improving torque distribution and reducing losses.</li></ul>
+        </details></li>
+        <li class="now"><details>
+          <summary><span class="title">Founding operations director and medical instruments EE co-lead<span class="org">Space Biomedical Systems, Purdue Aerospace Medicine VIP</span></span><span class="when">Aug 2025 – present</span><span class="tog" aria-hidden="true"></span></summary>
+          <ul><li>Designing a gravity-independent transfusion system pairing a 60–999 mL/hr infusion pump with a vacuum ePTFE bubble trap in an NX ISS locker assembly.</li><li>Designed 28 V ISS rack power distribution with fuse, TVS and bulk-capacitor protection, 9 V and 5 V buck rails, and a low-side MOSFET pump driver with flyback protection.</li><li>NASA Human Lander Challenge finalist (1 of 12 teams, June 2026), presenting a 1 µL ultrasonic air-in-line threshold and a risk matrix assessment.</li></ul>
+        </details></li>
+        <li><details>
+          <summary><span class="title">Undergraduate researcher and student intern<span class="org">Kennesaw State University Mechatronics, Marietta, GA</span></span><span class="when">Aug 2024 – Aug 2026</span><span class="tog" aria-hidden="true"></span></summary>
+          <ul><li>Designed and built a 2-DOF wheelchair-integrated exoskeleton with a modular power and mounting system that runs off the wheelchair's battery.</li><li>Co-authored a peer-reviewed paper at IEEE SoutheastCon 2025 on the mechanical architecture, controller and validation.</li><li>Verified the controller on an encoder-instrumented rig: ±5% tracking error and stable 5 N·m assistive torque across pilot sessions.</li></ul>
+        </details></li>
+        <li><details>
+          <summary><span class="title">Assistant teacher<span class="org">Eye Level Learning Center, Marietta, GA</span></span><span class="when">Jul 2024 – Aug 2026</span><span class="tog" aria-hidden="true"></span></summary>
+          <ul><li>Guided 40–60 students per shift, assigning and reviewing classwork across grade levels.</li><li>Ran front-desk operations: attendance, records and parent communication.</li></ul>
+        </details></li>
+      </ol>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">Skills</p>
+      <h2>What I work with</h2>
+      <p>Tools and methods from design through test.</p>
+    </div>
+    <div class="skills">
+      <div><h3>Design and PLM</h3><ul><li>Fusion</li><li>Onshape</li><li>NX</li><li>SolidWorks</li><li>Teamcenter</li><li>GD&amp;T</li><li>Engineering drawings</li></ul></div>
+      <div><h3>Manufacturing</h3><ul><li>CNC</li><li>Manual mill and lathe</li><li>Sheet metal</li><li>Metrology</li><li>3D printing</li><li>Rapid prototyping</li><li>DFM</li></ul></div>
+      <div><h3>Embedded and electronics</h3><ul><li>Arduino</li><li>Raspberry Pi</li><li>KiCad PCB design</li><li>BLDC control</li><li>Sensors</li><li>CAN bus</li></ul></div>
+      <div><h3>Controls and systems</h3><ul><li>Requirements traceability</li><li>V&amp;V testing</li><li>Trade studies</li><li>FMEA</li><li>Risk matrices</li></ul></div>
+      <div><h3>Programming</h3><ul><li>Python</li><li>MATLAB</li><li>C</li><li>Java</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="label">About me</p>
+      <h2>A bit about me</h2>
+      <p>From Woodstock, Georgia to West Lafayette, Indiana.</p>
+    </div>
+    <div class="about">
+      <div>
+        <p>I like problems where the engineering has to account for a person. A transfusion pump is only useful if it never sends air to the patient; an exoskeleton is only useful if someone can use it without leaving their chair.</p>
+        <p>Most of my work sits between mechanical design and embedded systems: CAD and machining on one side, power electronics, sensors and control code on the other. I started on the exoskeleton as a high school intern at Kennesaw State and kept going.</p>
+        <p>I'm looking for research and internship opportunities in medical devices, aerospace and robotics.</p>
+      </div>
+      <img src="assets/img/portrait.jpg" alt="Portrait of Niranjan Mukesh">
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT / TITLE BLOCK -->
+<section id="contact">
+  <div class="wrap">
+    <div class="contact">
+      <h2>Let's connect</h2>
+      <p>Feel free to reach out about research, internships or collaboration.</p>
+      <div class="links">
+        <a class="btn gold" href="mailto:niranjanmukesh07@gmail.com">Email me</a>
+        <a class="btn ghost" href="https://linkedin.com/in/niranjan-mukesh" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn ghost" href="assets/pdf/NM_Resume.pdf" target="_blank" rel="noopener">Resume (PDF)</a>
+        <button class="btn ghost" id="copyEmail">Copy email address</button>
+      </div>
+      <span class="email">niranjanmukesh07@gmail.com</span>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© 2026 Niranjan Mukesh. Purdue University, Mechanical Engineering.</div></footer>
+
+<dialog class="lb" id="lb" aria-label="Image viewer">
+  <img id="lbImg" alt="">
+  <div class="lb-bar"><span id="lbCap"></span><button class="chip" id="lbClose">Close</button></div>
+</dialog>
+
+<script>
+(() => {
+const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const C = {ink:'#1F1F1D', ink2:'#6B6A64', grid:'#E5E2DA', gold:'#B08D2E', goldFill:'#C9A227', red:'#C9A227', paper:'#FFFFFF'};
+const deg = r => r*180/Math.PI, rad = d => d*Math.PI/180;
+const clamp = (v,a,b) => Math.max(a,Math.min(b,v));
+
+function fit(cv){
+  const dpr = Math.min(devicePixelRatio||1, 2), r = cv.getBoundingClientRect();
+  cv.width = Math.round(r.width*dpr); cv.height = Math.round(r.height*dpr);
+  const ctx = cv.getContext('2d'); ctx.setTransform(dpr,0,0,dpr,0,0);
+  return {ctx, w:r.width, h:r.height};
+}
+function visible(el, cb){
+  const io = new IntersectionObserver(es => es.forEach(e => cb(e.isIntersecting)), {threshold:0});
+  io.observe(el);
+}
+
+/* ---------- HERO: exoskeleton IK rig ---------- */
+(() => {
+  const cv = document.getElementById('exo');
+  let S, target = null, mode = 'idle', t0 = performance.now(), onScreen = true;
+  const q = {knee: rad(90), ankle: 0};          // measured (with controller lag)
+  let ref = {knee: rad(90), ankle: 0}, clipped = false;
+  const out = {k: document.getElementById('kneeOut'), a: document.getElementById('ankleOut'), e: document.getElementById('errOut'), m: document.getElementById('modeOut')};
+  const trialBtn = document.getElementById('trialBtn'), note = document.getElementById('rigNote');
+  const resize = () => { S = fit(cv); geom(); draw(); };
+  let G;
+  function geom(){
+    const {w,h} = S, u = Math.min(w/6.4, h/5.6);
+    const seatY = h*0.5 - u*0.2;
+    const ground = seatY + u*2.25;
+    const r = u*1.45;
+    G = {u, hip:{x:w*0.5 - u*1.6, y:seatY}, L1:u*2.05, L2:u*2.0, L3:u*0.95, seatY, ground,
+         wheel:{x:w*0.5 - u*1.45, y:ground - r, r}};
+    G.knee = {x:G.hip.x + G.L1, y:G.hip.y};
+  }
+  function solve(T){
+    const K = G.knee, dx = T.x-K.x, dy = T.y-K.y;
+    let d = Math.hypot(dx,dy); const dmin = Math.abs(G.L2-G.L3)+1, dmax = G.L2+G.L3-0.5;
+    let reach = d>=dmin && d<=dmax; d = clamp(d,dmin,dmax);
+    const phi = Math.atan2(dy,dx);
+    const a = Math.acos(clamp((G.L2*G.L2 + d*d - G.L3*G.L3)/(2*G.L2*d),-1,1));
+    let th1 = phi + a;
+    let k = clamp(th1, rad(5), rad(125));
+    const A = {x:K.x + G.L2*Math.cos(k), y:K.y + G.L2*Math.sin(k)};
+    let th2 = Math.atan2(T.y-A.y, T.x-A.x);
+    let an = Math.atan2(Math.sin(th2-k+Math.PI/2), Math.cos(th2-k+Math.PI/2));
+    const anc = clamp(an, rad(-35), rad(30));
+    clipped = !reach || Math.abs(k-th1)>1e-3 || Math.abs(anc-an)>1e-3;
+    return {knee:k, ankle:anc};
+  }
+  function fk(s){
+    const K = G.knee, A = {x:K.x + G.L2*Math.cos(s.knee), y:K.y + G.L2*Math.sin(s.knee)};
+    const th2 = s.knee - Math.PI/2 + s.ankle;
+    return {K, A, T:{x:A.x + G.L3*Math.cos(th2), y:A.y + G.L3*Math.sin(th2)}, th2};
+  }
+  function link(ctx, P, Q, wdt, fill){
+    const ang = Math.atan2(Q.y-P.y, Q.x-P.x), L = Math.hypot(Q.x-P.x,Q.y-P.y);
+    ctx.save(); ctx.translate(P.x,P.y); ctx.rotate(ang);
+    ctx.beginPath(); ctx.roundRect(-wdt/2,-wdt/2,L+wdt,wdt,wdt/2);
+    ctx.fillStyle = fill; ctx.fill(); ctx.lineWidth = 1.5; ctx.strokeStyle = C.ink; ctx.stroke();
+    ctx.setLineDash([10,3,2,3]); ctx.lineWidth = .8; ctx.strokeStyle = C.ink2;
+    ctx.beginPath(); ctx.moveTo(-wdt*0.2,0); ctx.lineTo(L+wdt*0.2,0); ctx.stroke(); ctx.setLineDash([]);
+    ctx.restore();
+  }
+  function joint(ctx, P, r){
+    ctx.beginPath(); ctx.arc(P.x,P.y,r,0,7); ctx.fillStyle = C.paper; ctx.fill(); ctx.lineWidth=1.5; ctx.strokeStyle=C.ink; ctx.stroke();
+    ctx.beginPath(); ctx.arc(P.x,P.y,r*0.62,0,7); ctx.lineWidth=1; ctx.stroke();
+    ctx.lineWidth=.8; ctx.beginPath(); ctx.moveTo(P.x-r*1.35,P.y); ctx.lineTo(P.x+r*1.35,P.y); ctx.moveTo(P.x,P.y-r*1.35); ctx.lineTo(P.x,P.y+r*1.35); ctx.stroke();
+  }
+  function arcDim(ctx, P, a0, a1, r, label, color){
+    ctx.strokeStyle = color; ctx.fillStyle = color; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.arc(P.x,P.y,r,Math.min(a0,a1),Math.max(a0,a1)); ctx.stroke();
+    [a0,a1].forEach(a => { ctx.beginPath(); ctx.moveTo(P.x+Math.cos(a)*(r-5),P.y+Math.sin(a)*(r-5)); ctx.lineTo(P.x+Math.cos(a)*(r+5),P.y+Math.sin(a)*(r+5)); ctx.stroke(); });
+    const m = (a0+a1)/2; ctx.font = '700 12px Roboto, sans-serif'; ctx.textAlign='center'; ctx.textBaseline='middle';
+    const lx = P.x+Math.cos(m)*(r+18), ly = P.y+Math.sin(m)*(r+18);
+    const tw = ctx.measureText(label).width+8; ctx.fillStyle = C.paper; ctx.fillRect(lx-tw/2,ly-8,tw,16);
+    ctx.fillStyle = color; ctx.fillText(label,lx,ly);
+  }
+  function draw(){
+    const {ctx,w,h} = S; ctx.clearRect(0,0,w,h);
+    // fine grid
+    ctx.strokeStyle = 'rgba(31,31,29,.05)'; ctx.lineWidth = 1;
+    for(let x=0;x<w;x+=16){ctx.beginPath();ctx.moveTo(x+.5,0);ctx.lineTo(x+.5,h);ctx.stroke();}
+    for(let y=0;y<h;y+=16){ctx.beginPath();ctx.moveTo(0,y+.5);ctx.lineTo(w,y+.5);ctx.stroke();}
+    const {u,hip,wheel,seatY} = G;
+    // wheel
+    ctx.strokeStyle = C.ink2; ctx.lineWidth = 1.2;
+    ctx.beginPath(); ctx.arc(wheel.x,wheel.y,wheel.r,0,7); ctx.stroke();
+    ctx.beginPath(); ctx.arc(wheel.x,wheel.y,wheel.r*0.9,0,7); ctx.lineWidth=.8; ctx.stroke();
+    for(let i=0;i<12;i++){const a=i*Math.PI/6; ctx.beginPath(); ctx.moveTo(wheel.x,wheel.y); ctx.lineTo(wheel.x+Math.cos(a)*wheel.r*0.9, wheel.y+Math.sin(a)*wheel.r*0.9); ctx.lineWidth=.5; ctx.stroke();}
+    // ground
+    const gy = G.ground; ctx.strokeStyle = C.ink; ctx.lineWidth=1.2; ctx.beginPath(); ctx.moveTo(10,gy); ctx.lineTo(w-10,gy); ctx.stroke();
+    for(let x=14;x<w-10;x+=10){ctx.beginPath();ctx.moveTo(x,gy);ctx.lineTo(x-6,gy+6);ctx.lineWidth=.6;ctx.stroke();}
+    // backrest + seat
+    ctx.fillStyle = 'rgba(201,162,39,.35)'; ctx.strokeStyle = C.ink; ctx.lineWidth = 1.5;
+    ctx.beginPath(); ctx.rect(hip.x-u*0.9, seatY+u*0.18, u*2.6, u*0.22); ctx.fill(); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(hip.x-u*0.85, seatY+u*0.18); ctx.lineTo(hip.x-u*1.15, seatY-u*1.9); ctx.lineWidth=u*0.16; ctx.lineCap='round'; ctx.strokeStyle=C.ink; ctx.stroke(); ctx.lineCap='butt';
+    // leg
+    const f = fk(q);
+    link(ctx, hip, f.K, u*0.34, '#F3EEDF');
+    link(ctx, f.K, f.A, u*0.26, '#F3EEDF');
+    link(ctx, f.A, f.T, u*0.2, '#F3EEDF');
+    joint(ctx, hip, u*0.16); joint(ctx, f.K, u*0.3); joint(ctx, f.A, u*0.22);
+    // actuator label
+    ctx.font = '11px Roboto, sans-serif'; ctx.fillStyle = C.ink2; ctx.textAlign='left'; ctx.textBaseline='alphabetic';
+    // knee angle dimension (from thigh extension to shank)
+    arcDim(ctx, f.K, 0, q.knee, u*0.62, deg(q.knee).toFixed(1)+'°', C.red);
+    // ankle dimension (from neutral to foot)
+    const neutral = q.knee - Math.PI/2;
+    if (Math.abs(q.ankle) > rad(1)) arcDim(ctx, f.A, neutral, f.th2, u*0.5, (deg(q.ankle)>0?'+':'')+deg(q.ankle).toFixed(1)+'°', C.gold);
+    ctx.setLineDash([4,4]); ctx.strokeStyle=C.gold; ctx.lineWidth=.8; ctx.beginPath(); ctx.moveTo(f.A.x,f.A.y); ctx.lineTo(f.A.x+Math.cos(neutral)*u*0.8, f.A.y+Math.sin(neutral)*u*0.8); ctx.stroke(); ctx.setLineDash([]);
+    // thigh extension reference
+    ctx.setLineDash([4,4]); ctx.strokeStyle=C.red; ctx.beginPath(); ctx.moveTo(f.K.x,f.K.y); ctx.lineTo(f.K.x+u*0.95,f.K.y); ctx.stroke(); ctx.setLineDash([]);
+    // target
+    if (target && mode==='follow'){
+      ctx.strokeStyle = clipped ? C.red : C.ink; ctx.lineWidth=1;
+      ctx.beginPath(); ctx.arc(target.x,target.y,9,0,7); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(target.x-15,target.y); ctx.lineTo(target.x+15,target.y); ctx.moveTo(target.x,target.y-15); ctx.lineTo(target.x,target.y+15); ctx.stroke();
+      ctx.setLineDash([3,3]); ctx.beginPath(); ctx.moveTo(f.T.x,f.T.y); ctx.lineTo(target.x,target.y); ctx.stroke(); ctx.setLineDash([]);
+      ctx.font='11px Roboto, sans-serif'; ctx.fillStyle = clipped?C.red:C.ink2; ctx.textAlign='left';
+      ctx.fillText(clipped ? 'joint limit' : `x ${((target.x-hip.x)/u*100).toFixed(0)}  y ${((hip.y-target.y)/u*100).toFixed(0)} mm`, target.x+14, target.y-12);
+    }
+    // labels
+    ctx.font='11px Roboto, sans-serif'; ctx.fillStyle=C.ink2; ctx.textAlign='center';
+    ctx.fillText('AK10-9 actuator', f.K.x, f.K.y - u*0.48);
+  }
+  let errSm = 0;
+  function step(now){
+    const t = (now - t0)/1000;
+    if (mode==='trial'){
+      ref = {knee: rad(78 + 30*Math.sin(t*1.6)), ankle: rad(14*Math.sin(t*1.6 + 0.9))};
+    } else if (mode==='follow' && target){ ref = solve(target); }
+    // first-order controller lag
+    const kp = mode==='trial' ? 0.16 : 0.22;
+    q.knee += (ref.knee - q.knee)*kp; q.ankle += (ref.ankle - q.ankle)*kp;
+    const rng = rad(120);
+    const e = (Math.abs(ref.knee-q.knee)+Math.abs(ref.ankle-q.ankle))/rng*100;
+    errSm += (e-errSm)*0.15;
+    out.k.textContent = deg(q.knee).toFixed(1)+'°';
+    out.a.textContent = (deg(q.ankle)>0?'+':'')+deg(q.ankle).toFixed(1)+'°';
+    out.e.textContent = errSm.toFixed(1)+'%';
+    draw();
+  }
+  let raf = 0;
+  function loop(now){ step(now); raf = (onScreen && (mode!=='idle' || Math.abs(ref.knee-q.knee)>1e-4 || Math.abs(ref.ankle-q.ankle)>1e-4)) ? requestAnimationFrame(loop) : 0; }
+  const kick = () => { if(!raf) raf = requestAnimationFrame(loop); };
+  function setMode(m){
+    mode = m; out.m.textContent = m==='follow' ? 'Following pointer' : m==='trial' ? 'Sinusoidal trial' : 'Idle';
+    trialBtn.setAttribute('aria-pressed', m==='trial'); trialBtn.textContent = m==='trial' ? 'Stop trial' : 'Run sinusoidal trial';
+    note.style.opacity = m==='idle' ? 1 : 0; note.style.transition='opacity .3s';
+    kick();
+  }
+  const pos = e => { const r = cv.getBoundingClientRect(); return {x:e.clientX-r.left, y:e.clientY-r.top}; };
+  cv.addEventListener('pointermove', e => { target = pos(e); if(mode!=='follow') setMode('follow'); kick(); });
+  cv.addEventListener('pointerdown', e => { target = pos(e); setMode('follow'); });
+  cv.addEventListener('pointerleave', () => { if(mode==='follow'){ target=null; setMode(reduce?'idle':'trial'); } });
+  trialBtn.addEventListener('click', () => setMode(mode==='trial' ? 'idle' : 'trial'));
+  visible(cv, v => { onScreen = v; if (v) kick(); });
+  addEventListener('resize', resize);
+  document.fonts && document.fonts.ready.then(resize);
+  resize();
+  // Orchestrated opening: leg swings out from rest once, then idles in trial mode
+  if (!reduce){ q.knee = rad(118); q.ankle = rad(-20); setTimeout(() => { if(mode==='idle') setMode('trial'); }, 900); }
+  kick();
+})();
+
+/* ---------- MBIP: infusion line simulation ---------- */
+(() => {
+  const cv = document.getElementById('flow');
+  const rate = document.getElementById('rate'), rateOut = document.getElementById('rateOut');
+  const trapBtn = document.getElementById('trapBtn'), resetBtn = document.getElementById('resetBtn');
+  const tEl = document.getElementById('trapped'), aEl = document.getElementById('alarms'), msg = document.getElementById('alarmMsg');
+  let S, P, bubbles = [], trapOn = true, halted = false, trapped = 0, alarms = 0, onScreen = false, last = 0, spawnAcc = 0, phase = 0, dash = 0;
+  const L = {line:'#8E8576', txt:'#B8B0A0', fluid:'#B83A2E', gold:'#C9A227', white:'#F5F0E6', alarm:'#FF9B7A'};
+  function resize(){ S = fit(cv); const {w,h} = S;
+    P = {y:h*0.6, x0:w*0.04, bag:{x:w*0.04,y:h*0.12,w:w*0.07,h:h*0.32}, trap:w*0.28, sens:w*0.52, pump:w*0.71, end:w*0.96, tw:Math.max(54,w*0.12), pr:Math.min(h*0.17,w*0.06)};
+    draw(); }
+  function lbl(ctx,t,x,y,c=L.txt,al='center'){ctx.font='11.5px Roboto, sans-serif';ctx.fillStyle=c;ctx.textAlign=al;ctx.fillText(t,x,y);}
+  function draw(){
+    const {ctx,w,h} = S, y = P.y; ctx.clearRect(0,0,w,h);
+    ctx.strokeStyle='rgba(201,162,39,.07)'; ctx.lineWidth=1;
+    for(let x=0;x<w;x+=20){ctx.beginPath();ctx.moveTo(x+.5,0);ctx.lineTo(x+.5,h);ctx.stroke();}
+    for(let yy=0;yy<h;yy+=20){ctx.beginPath();ctx.moveTo(0,yy+.5);ctx.lineTo(w,yy+.5);ctx.stroke();}
+    // bag
+    const b = P.bag; ctx.strokeStyle=L.line; ctx.lineWidth=1.4; ctx.beginPath(); ctx.roundRect(b.x,b.y,b.w,b.h,6); ctx.stroke();
+    ctx.fillStyle='rgba(184,64,44,.55)'; ctx.fillRect(b.x+3,b.y+b.h*0.3,b.w-6,b.h*0.7-3);
+    lbl(ctx,'RBC bag',b.x+b.w/2,b.y-8);
+    // tube
+    ctx.beginPath(); ctx.moveTo(b.x+b.w/2,b.y+b.h); ctx.lineTo(b.x+b.w/2,y); ctx.lineTo(P.end,y);
+    ctx.strokeStyle='#3A3229'; ctx.lineWidth=9; ctx.stroke();
+    ctx.setLineDash([10,8]); ctx.lineDashOffset=-dash; ctx.strokeStyle=L.fluid; ctx.lineWidth=4; ctx.stroke(); ctx.setLineDash([]);
+    // arrow at patient
+    ctx.fillStyle=L.white; ctx.beginPath(); ctx.moveTo(P.end+8,y); ctx.lineTo(P.end-4,y-7); ctx.lineTo(P.end-4,y+7); ctx.fill();
+    lbl(ctx,'Patient',P.end-6,y+30,L.txt,'right');
+    // trap
+    const tw=P.tw, th=h*0.26, tx=P.trap-tw/2;
+    ctx.fillStyle = trapOn ? 'rgba(201,162,39,.10)' : 'rgba(245,240,230,.04)';
+    ctx.strokeStyle = trapOn ? L.gold : L.line; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.rect(tx,y-th/2,tw,th); ctx.fill(); ctx.stroke();
+    ctx.setLineDash([3,3]); ctx.beginPath(); ctx.moveTo(tx+6,y-7); ctx.lineTo(tx+tw-6,y-7); ctx.moveTo(tx+6,y+7); ctx.lineTo(tx+tw-6,y+7); ctx.stroke(); ctx.setLineDash([]);
+    ctx.beginPath(); ctx.moveTo(P.trap,y-th/2); ctx.lineTo(P.trap,y-th/2-h*0.16); ctx.lineWidth=6; ctx.strokeStyle='#3A3229'; ctx.stroke();
+    lbl(ctx, trapOn?'Vacuum':'Vacuum off', P.trap, y-th/2-h*0.16-8, trapOn?L.gold:L.txt);
+    lbl(ctx,w<560?'Bubble trap':'ePTFE bubble trap',P.trap,y+th/2+18);
+    // sensor
+    const sx=P.sens; ctx.fillStyle = halted ? 'rgba(255,138,115,.25)' : '#241F18';
+    ctx.strokeStyle = halted ? L.alarm : L.white; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.rect(sx-12,y-18,24,36); ctx.fill(); ctx.stroke();
+    for(let i=1;i<=3;i++){ctx.beginPath();ctx.arc(sx,y-18,6*i,Math.PI*1.2,Math.PI*1.8);ctx.lineWidth=1;ctx.strokeStyle= halted?L.alarm:'rgba(245,240,230,'+(0.6-i*0.15)+')';ctx.stroke();}
+    const nar = w < 560;
+    lbl(ctx,nar?'Sensor':'Ultrasonic sensor',sx,nar?y-46:y+38, halted?L.alarm:L.txt);
+    lbl(ctx,'≥ 1 µL alarms',sx,nar?y-32:y+53,halted?L.alarm:'#8E8576');
+    // pump
+    const px=P.pump, pr=P.pr; ctx.strokeStyle=L.white; ctx.lineWidth=1.4;
+    ctx.beginPath(); ctx.arc(px,y-pr*0.15,pr,0,7); ctx.stroke();
+    for(let i=0;i<3;i++){const a=phase+i*2*Math.PI/3; const rx=px+Math.cos(a)*pr*0.62, ry=y-pr*0.15+Math.sin(a)*pr*0.62; ctx.beginPath(); ctx.arc(rx,ry,pr*0.2,0,7); ctx.fillStyle='#241F18'; ctx.fill(); ctx.stroke();}
+    ctx.beginPath(); ctx.arc(px,y-pr*0.15,3,0,7); ctx.fillStyle=L.white; ctx.fill();
+    lbl(ctx, halted ? 'Pump halted' : (w<560?'Pump':'Peristaltic pump'), px, y+pr+18, halted?L.alarm:L.txt);
+    // bubbles
+    for(const bb of bubbles){ const r = 2+Math.sqrt(bb.v)*2.1;
+      ctx.globalAlpha = bb.a; ctx.beginPath(); ctx.arc(bb.x,bb.y,r,0,7);
+      ctx.fillStyle='rgba(245,240,230,.25)'; ctx.fill(); ctx.strokeStyle= bb.flag?L.alarm:L.white; ctx.lineWidth=1.2; ctx.stroke();
+      if (bb.flag){ lbl(ctx, bb.v.toFixed(1)+' µL', bb.x, S.w<560 ? bb.y+r+46 : bb.y-r-8, L.alarm); }
+      ctx.globalAlpha = 1; }
+    // title
+    lbl(ctx, `${rate.value} mL/hr`, w-12, 20, L.gold, 'right');
+  }
+  function tick(now){
+    const dt = Math.min(0.05,(now-last)/1000||0); last = now;
+    const r = +rate.value, v = halted ? 0 : 30 + r*0.16;   // px/s, scaled for legibility
+    dash += v*dt; phase += (halted?0:(0.6 + r/220))*dt;
+    if(!halted){ spawnAcc += dt*(0.35 + r/900); if(spawnAcc>1){ spawnAcc=0; bubbles.push({x:P.bag.x+P.bag.w/2+8, y:P.y, v:0.3+Math.random()*Math.random()*7, a:1, st:'line'}); } }
+    for(const b of bubbles){
+      if(b.st==='line'){ if(!halted) b.x += v*dt;
+        if(trapOn && Math.abs(b.x-P.trap)<4){ b.st='vent'; trapped++; tEl.textContent=trapped; }
+        else if(!trapOn && !b.done && b.x>=P.sens-2){ b.done=true; if(b.v>=1){ b.flag=true; b.x=P.sens-2; halted=true; alarms++; aEl.textContent=alarms; resetBtn.disabled=false; msg.textContent=`Air in line: ${b.v.toFixed(1)} µL. Pump halted.`; } }
+        if(b.x>P.end) b.a=0; }
+      else if(b.st==='vent'){ b.y -= 40*dt; b.x += (P.trap-b.x)*0.2; b.a -= dt*0.9; }
+    }
+    bubbles = bubbles.filter(b => b.a>0);
+    draw();
+    if(onScreen && !reduce) requestAnimationFrame(tick);
+  }
+  rate.addEventListener('input', () => { rateOut.textContent = rate.value+' mL/hr'; if(reduce) draw(); });
+  trapBtn.addEventListener('click', () => { trapOn=!trapOn; trapBtn.setAttribute('aria-pressed',trapOn); trapBtn.textContent = trapOn?'Bubble trap on':'Bubble trap off'; if(reduce) draw(); });
+  resetBtn.addEventListener('click', () => { halted=false; bubbles=bubbles.filter(b=>!b.flag); resetBtn.disabled=true; msg.textContent=''; });
+  addEventListener('resize', resize);
+  document.fonts && document.fonts.ready.then(resize);
+  resize();
+  if (reduce){ bubbles=[{x:S.w*0.18,y:P.y,v:3,a:1,st:'line'},{x:S.w*0.62,y:P.y,v:0.6,a:1,st:'line'}]; draw(); }
+  visible(cv, vis => { const was=onScreen; onScreen=vis; if(vis && !was && !reduce){ last=performance.now(); requestAnimationFrame(tick);} });
+})();
+
+/* ---------- Exo tracking plot ---------- */
+(() => {
+  const cv = document.getElementById('track'); let S, onScreen=false, t=0, last=0;
+  const resize = () => { S = fit(cv); draw(); };
+  function seriesAt(tt){
+    const kr = 78 + 30*Math.sin(tt*1.6), ar = 14*Math.sin(tt*1.6+0.9);
+    const km = 78 + 30*Math.sin((tt-0.06)*1.6)*0.985 + 0.9*Math.sin(tt*11.3), am = 14*Math.sin((tt-0.07)*1.6+0.9)*0.97 + 0.5*Math.sin(tt*9.1);
+    return {kr,ar,km,am};
+  }
+  function draw(){
+    const {ctx,w,h} = S; ctx.clearRect(0,0,w,h);
+    const pad={l:44,r:12,t:14,b:26}, W=w-pad.l-pad.r, H=h-pad.t-pad.b, span=8;
+    const Y = v => pad.t + H*(1-(v+30)/(130));   // -30..100 deg
+    ctx.strokeStyle='rgba(31,31,29,.08)'; ctx.lineWidth=1; ctx.font='11px Roboto, sans-serif'; ctx.fillStyle='#6B6A64'; ctx.textAlign='right'; ctx.textBaseline='middle';
+    for(let v=-20; v<=100; v+=20){ const yy=Y(v); ctx.beginPath(); ctx.moveTo(pad.l,yy+.5); ctx.lineTo(w-pad.r,yy+.5); ctx.stroke(); ctx.fillText(v+'°',pad.l-6,yy); }
+    ctx.textAlign='center'; ctx.textBaseline='top';
+    for(let s=0;s<=span;s+=2){ const xx=pad.l+W*s/span; ctx.beginPath(); ctx.moveTo(xx+.5,pad.t); ctx.lineTo(xx+.5,pad.t+H); ctx.stroke(); }
+    ctx.fillText('time, 2 s per division', pad.l+W/2, pad.t+H+8);
+    const N = Math.max(60, Math.floor(W/2)), xs = i => pad.l + W*i/N, tt = i => t - span + span*i/N;
+    // band ±5% of knee range (120°) → ±6°
+    ctx.fillStyle='rgba(201,162,39,.22)'; ctx.beginPath();
+    for(let i=0;i<=N;i++){ const s=seriesAt(tt(i)); ctx.lineTo(xs(i), Y(s.kr+6)); }
+    for(let i=N;i>=0;i--){ const s=seriesAt(tt(i)); ctx.lineTo(xs(i), Y(s.kr-6)); }
+    ctx.fill();
+    const line = (key,color,dashArr) => { ctx.beginPath(); for(let i=0;i<=N;i++){ const s=seriesAt(tt(i)); ctx.lineTo(xs(i),Y(s[key])); } ctx.strokeStyle=color; ctx.lineWidth=dashArr?1.3:2; ctx.setLineDash(dashArr||[]); ctx.stroke(); ctx.setLineDash([]); };
+    line('kr','#1F1F1D',[6,4]); line('km','#1F1F1D'); line('ar','#B08D2E',[6,4]); line('am','#B08D2E');
+  }
+  function tick(now){ t += Math.min(0.05,(now-last)/1000||0); last=now; draw(); if(onScreen && !reduce) requestAnimationFrame(tick); }
+  addEventListener('resize', resize); resize();
+  visible(cv, v => { const was=onScreen; onScreen=v; if(v && !was && !reduce){ last=performance.now(); requestAnimationFrame(tick);} });
+})();
+
+/* ---------- Trade study tabs ---------- */
+(() => {
+  const D = {
+    tuned:{t:'A small mass on a spring, tuned to the tremor frequency, absorbs the oscillation passively.', s:'Passive. No power or control needed.', w:'Adds mass, and works best near the frequency it was tuned for.'},
+    jam:{t:'Thin layers inside the glove lock together under vacuum, stiffening on demand and staying flexible otherwise.', s:'Low profile, with stiffness that can be switched on and off.', w:'Needs a vacuum source and control.'}
+  };
+  const tabs = document.querySelectorAll('.trade-tabs button'), panel = document.getElementById('tp'), txt = document.getElementById('tradeText');
+  const pS = document.getElementById('pcS'), pW = document.getElementById('pcW');
+  function sel(btn){ tabs.forEach(b => b.setAttribute('aria-selected', b===btn)); const d = D[btn.dataset.k]; txt.textContent = d.t; pS.textContent = d.s; pW.textContent = d.w; panel.setAttribute('aria-labelledby',btn.id); }
+  tabs.forEach(b => { b.addEventListener('click', () => sel(b)); b.addEventListener('keydown', e => { if(e.key==='ArrowRight'||e.key==='ArrowLeft'){ const o=[...tabs].find(x=>x!==b); o.focus(); sel(o);} }); });
+  sel(tabs[0]);
+})();
+
+/* ---------- Lightbox ---------- */
+(() => {
+  const dlg = document.getElementById('lb'), img = document.getElementById('lbImg'), cap = document.getElementById('lbCap');
+  document.querySelectorAll('.gallery button').forEach(b => b.addEventListener('click', () => {
+    img.src = b.dataset.full; img.alt = b.querySelector('img').alt; cap.textContent = b.dataset.cap; dlg.showModal();
+  }));
+  document.getElementById('lbClose').addEventListener('click', () => dlg.close());
+  dlg.addEventListener('click', e => { if(e.target===dlg) dlg.close(); });
+})();
+
+/* ---------- Copy helpers ---------- */
+(() => {
+  const bib = `@inproceedings{voicu2025seat,
+  author={Voicu, Razvan Cristian and Freeman, Charles F and Garretson, Christopher E and Sun, Zoe M and Bonus, Ryan H. and Slutzky, Zachary A and Mukesh, Niranjan and Tanveer, Muhammad Hassan and Tello, Yannique and Chang, Yusun},
+  booktitle={SoutheastCon 2025},
+  title={Seat-Focused Multi-DOF Exoskeleton Wheelchair Synergy for Continuous Lower-Limb Rehabilitation},
+  year={2025}, pages={1632-1638},
+  doi={10.1109/SoutheastCon56624.2025.10971706}
+}`;
+  const copy = async (text, el, okMsg, btn) => {
+    try { await navigator.clipboard.writeText(text); } catch(e){ const ta=document.createElement('textarea'); ta.value=text; document.body.appendChild(ta); ta.select(); try{document.execCommand('copy');}catch(_){} ta.remove(); }
+    if (el){ el.textContent = okMsg; setTimeout(()=>el.textContent='',2200); }
+    if (btn){ const o=btn.textContent; btn.textContent=okMsg; setTimeout(()=>btn.textContent=o,2200); }
+  };
+  document.getElementById('citeBtn').addEventListener('click', () => copy(bib, document.getElementById('citeOk'), 'Copied'));
+  const eb = document.getElementById('copyEmail');
+  eb.addEventListener('click', () => copy('niranjanmukesh07@gmail.com', null, 'Email address copied', eb));
+})();
+
+/* ---------- Nav highlight ---------- */
+(() => {
+  const links = [...document.querySelectorAll('.nav ul a')];
+  const map = new Map(links.map(a => [a.getAttribute('href').slice(1), a]));
+  const io = new IntersectionObserver(es => es.forEach(e => { if(e.isIntersecting){ links.forEach(l=>l.removeAttribute('aria-current')); const a = map.get(e.target.id); a && a.setAttribute('aria-current','true'); } }), {rootMargin:'-45% 0px -50% 0px'});
+  map.forEach((_,id) => { const s = document.getElementById(id); s && io.observe(s); });
+})();
+})();
+</script>
+</body>
+</html>
